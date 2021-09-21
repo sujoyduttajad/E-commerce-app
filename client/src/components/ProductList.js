@@ -1,10 +1,12 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import axios from 'axios'
 
 export default function ProductList() {
 
-  useEffect(() => {
+  const [products, setProducts] = useState([]);
 
+  useEffect(() => {
+    
   }, []);
 
   return <div>product list</div>;
