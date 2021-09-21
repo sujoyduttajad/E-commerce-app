@@ -1,6 +1,12 @@
-import React from "react";
+import React, {useEffect} from "react";
+import axios from 'axios'
 
 export default function ProductList() {
+
+  useEffect(() => {
+
+  }, []);
+
   return <div>product list</div>;
 }
 
