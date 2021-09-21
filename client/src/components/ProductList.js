@@ -11,7 +11,12 @@ export default function ProductList() {
       .then(products => setProducts(products))
   }, []);
 
-  return <div>product list</div>;
+  return products.map(product => (
+    <ProductItem
+      key={product.id}
+      product={product}
+    />
+  ));
 }
 
 // function ProductItem() {
