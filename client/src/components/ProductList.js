@@ -6,7 +6,7 @@ export default function ProductList() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:3001/api/products')
+    axios.get('/api/products')
       .then(res => res.data.products)
       .then(products => setProducts(products))
   }, []);
