@@ -12,12 +12,18 @@ export default function ProductList() {
       .then(products => setProducts(products))
   }, []);
 
-  return products.map(product => (
-    <ProductItem
-      key={product.id}
-      product={product}
-    />
-  ));
+  return (
+    <div>
+      {
+        products.map(product => (
+            <ProductItem
+              key={product.id}
+              product={product}
+            />
+        ))
+      }
+    </div>
+  )
 }
 
 function ProductItem({ product }) {
