@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import axios from 'axios';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function ProductList() {
 
@@ -42,7 +42,7 @@ function ProductItem({ product }) {
             {product.description}
           </p>
           <div className="flex items-center flex-wrap ">
-            <span className="text-indigo-400 inline-flex items-center md:mb-2 lg:mb-0">
+            <Link to={`/${product.id}`} className="text-indigo-400 inline-flex items-center md:mb-2 lg:mb-0">
               See More
               <svg
                 fill="none"
@@ -55,7 +55,7 @@ function ProductItem({ product }) {
               >
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg>
-            </span>
+            </Link>
             <span className="text-gray-500 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-lg pr-3 py-1 border-gray-800 font-bold">
               {product.price}
             </span>
