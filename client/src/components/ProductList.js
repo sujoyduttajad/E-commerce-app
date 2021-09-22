@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
-import axios from 'axios'
+import axios from 'axios';
+import {Link} from 'react-router-dom';
 
 export default function ProductList() {
 
@@ -23,11 +24,13 @@ function ProductItem({ product }) {
   return (
     <div className="p-4 md:w-1/3">
       <div className="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
-        <img
-          className="lg:h-96 md:h-36 w-full object-cover object-center"
-          src={product.image}
-          alt={product.name}
-        />
+        <Link to={`/${product.id}`}>
+          <img
+            className="lg:h-96 md:h-36 w-full object-cover object-center"
+            src={product.image}
+            alt={product.name}
+          />
+        </Link>
         <div className="p-6">
           <h2 className="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">
             {product.category}
