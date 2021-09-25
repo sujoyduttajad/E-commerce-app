@@ -1,8 +1,11 @@
 import React, {useEffect, useState} from "react";
 import axios from 'axios';
-import { Link, Router } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { useQuery, useQueryErrorResetBoundary } from "react-query";
 
 export default function ProductList() {
+
+  useQuery('Products', () => axios('/api/products').then(res => res.data.products))
 
   const [products, setProducts] = useState([]);
 
