@@ -5,15 +5,15 @@ import { useQuery, useQueryErrorResetBoundary } from "react-query";
 
 export default function ProductList() {
 
-  useQuery('Products', () => axios('/api/products').then(res => res.data.products))
+  const { data: products, isLoading } = useQuery('Products', () => axios('/api/products').then(res => res.data.products))
 
-  const [products, setProducts] = useState([]);
+  // const [products, setProducts] = useState([]);
 
-  useEffect(() => {
-    axios.get('/api/products')
-      .then(res => res.data.products)
-      .then(products => setProducts(products))
-  }, []);
+  // useEffect(() => {
+  //   axios.get('/api/products')
+  //     .then(res => res.data.products)
+  //     .then(products => setProducts(products))
+  // }, []);
 
   return (
     <>
