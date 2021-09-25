@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { useQuery } from "react-query";
 import LoadingSpinner from "./LoadingSpinner";
-import formatProductPrice from "utils/formatProductPrice";
+import formatProductPrice from "../utils/formatProductPrice";
 
 export default function ProductList() {
 
