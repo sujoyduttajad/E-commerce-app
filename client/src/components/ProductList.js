@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { useQuery } from "react-query";
 import LoadingSpinner from "./LoadingSpinner";
+import formatProductPrice from "utils/formatProductPrice";
 
 export default function ProductList() {
 
@@ -27,8 +28,7 @@ export default function ProductList() {
 
 function ProductItem({ product }) {
 
-  // {/* Just temporarily will be shifted to App.js root level comp */}
-    // </Router>
+  const price = formatProductPrice(product);
 
   return (
       
@@ -53,7 +53,7 @@ function ProductItem({ product }) {
           </p>
           <div className="flex items-center flex-wrap ">
             <Link to={`/${product.id}`} className="text-indigo-400 inline-flex items-center md:mb-2 lg:mb-0">
-              {/* <span className="text-indigo-400 inline-flex items-center md:mb-2 lg:mb-0"> */}
+              
                 See More
                 <svg
                   fill="none"
@@ -66,10 +66,10 @@ function ProductItem({ product }) {
                 >
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
-              {/* </span> */}
+              
             </Link>
             <span className="text-gray-500 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-lg pr-3 py-1 border-gray-800 font-bold">
-              {product.price}
+              {price}
             </span>
           </div>
         </div>
