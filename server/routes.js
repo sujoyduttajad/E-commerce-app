@@ -4,9 +4,11 @@ const products = require('./products.json')
 module.exports = function getRoutes() {
   const router = express.Router();
 
-  router.get('/products', (req, res) => {
-    res.status(200).json({ products })
-  })
+  router.get('/products', getProducts);
 
   return router;
 };
+
+function getProducts(req, res) {
+  res.status(200).json({ products });
+}
