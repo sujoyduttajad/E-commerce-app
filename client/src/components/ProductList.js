@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import { useQuery } from "react-query";
+import { useQuery } from "@tanstack/react-query";
 import LoadingSpinner from "./LoadingSpinner";
 import formatProductPrice from "../utils/formatProductPrice";
 
 export default function ProductList() {
-  const { data: products, isLoading } = useQuery("Products", () =>
+  const { data: products, isLoading } = useQuery(["Products"], () =>
     axios("/api/products").then((res) => res.data.products)
   );
 
