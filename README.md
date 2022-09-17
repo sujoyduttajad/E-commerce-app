@@ -1,6 +1,6 @@
-[**Download the React Cheatsheet**](https://bit.ly/react-sheet-2021)
 
-## System Requirements
+### React E-commerce app with Stripe Checkout
 
+## Requiremnets
 - Node 10+
 - NPM 5+
