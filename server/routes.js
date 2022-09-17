@@ -1,5 +1,7 @@
+require('dotenv').config();
 const express = require("express");
 const products = require("./products.json");
+
 
 module.exports = function getRoutes() {
   const router = express.Router();
