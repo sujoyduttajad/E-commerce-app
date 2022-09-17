@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery } from "react-query";
 import LoadingSpinner from "./LoadingSpinner";
 import formatProductPrice from "../utils/formatProductPrice";
 
