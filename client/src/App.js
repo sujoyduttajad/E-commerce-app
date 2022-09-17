@@ -2,7 +2,7 @@ import React from "react";
 import Home from "./pages/Home";
 import Result from "./pages/Result";
 import Product from "./pages/Product";
-import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
+import { QueryClientProvider, QueryClient } from "react-query";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { loadStripe } from "@stripe/stripe-js";
 
