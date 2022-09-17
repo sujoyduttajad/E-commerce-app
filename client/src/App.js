@@ -5,19 +5,27 @@ import Product from "./pages/Product";
 import { QueryClientProvider, QueryClient } from "react-query";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { loadStripe } from "@stripe/stripe-js";
+import { CartProvider } from "use-shopping-cart";
 
 const queryClient = new QueryClient();
+const stripePromise = loadStripe(process.env.REACT_APP_STRIPE);
 
 function App() {
   return (
     <BrowserRouter>
-      <QueryClientProvider client={queryClient}>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/result" component={Result} />
-          <Route path="/:productId" component={Product} />
-        </Switch>
-      </QueryClientProvider>
+      <CartProvider
+        mode="checkout-session"
+        stripe={stripePromise}
+        currency="USD"
+      >
+        <QueryClientProvider client={queryClient}>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/result" component={Result} />
+            <Route path="/:productId" component={Product} />
+          </Switch>
+        </QueryClientProvider>
+      </CartProvider>
     </BrowserRouter>
   );
 }
