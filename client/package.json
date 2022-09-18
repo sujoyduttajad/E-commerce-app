@@ -25,7 +25,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "overrides": {
+  "devDependencies": {
     "react-error-overlay": "6.0.9"
   },
   "browserslist": [
