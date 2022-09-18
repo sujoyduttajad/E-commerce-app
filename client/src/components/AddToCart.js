@@ -9,7 +9,7 @@ export default function AddToCart({ product }) {
 
   const handleAddItem = () => {
     addItem(product);
-    toast.success(`${product.name} has been added to your cart!`)
+    toast.success(`${product.name} is added to your cart!`)
   }
 
   return (
