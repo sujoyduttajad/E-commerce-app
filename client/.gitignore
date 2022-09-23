@@ -11,8 +11,7 @@
 # production
 /build
 
-# assets
-**/assets
+
 
 # misc
 .env
