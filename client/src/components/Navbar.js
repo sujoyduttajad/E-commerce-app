@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import CartSummary from "./CartSummary";
+import CheckoutCart from "./CheckoutCart";
 import { LogoIcon } from "./Icons";
 
 export default function Navbar() {
@@ -14,6 +16,8 @@ export default function Navbar() {
             </span>
           </span>
         </Link>
+        <CartSummary />
+        <CheckoutCart />
       </div>
     </header>
   );
