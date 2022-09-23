@@ -11,9 +11,6 @@ export default function Navbar() {
         <Link to="/" className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
           <span className="flex items-center justify-center ml-3 text-xl">
             <LogoIcon />
-            <span className="inline-block py-1 px-2 text-white text-2xl font-medium tracking-wider">
-              EssenCart
-            </span>
           </span>
         </Link>
         <CartSummary />
