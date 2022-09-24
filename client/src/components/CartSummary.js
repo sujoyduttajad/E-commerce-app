@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import formattedNetPrice from "utils/formattedNetPrice";
+import { useGetItems } from "utils/useGetItems";
 import CartModal from "./CartModal";
 import { CartIcon } from "./Icons";
 
@@ -9,6 +10,8 @@ export default function CartSummary() {
   const price = localStorage.getItem("cart-values");
   const netPrice = JSON.parse(price).totalPrice;
   const cartCountLS = JSON.parse(price).cartCount;
+
+  // const { netPrice, cartCountLS } = useGetItems();
 
   const toggleModal = () => setModalOpen(!isModalOpen);
 
