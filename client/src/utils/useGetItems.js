@@ -13,7 +13,8 @@ export const useGetItems = () => {
 
   const price = JSON.parse(localStorage.getItem("cart-values"));
   const totalPrice = price.totalPrice;
+  const cartDetails = price.cartDetails;
   const cartCount = price.cartCount;
 
-  return [totalPrice, cartCount];
+  return [totalPrice, cartCount, cartDetails];
 };
