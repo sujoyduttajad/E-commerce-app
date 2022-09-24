@@ -7,11 +7,12 @@ import { CartIcon } from "./Icons";
 export default function CartSummary() {
   const [isModalOpen, setModalOpen] = useState(false);
 
-  const price = localStorage.getItem("cart-values");
-  const netPrice = JSON.parse(price).totalPrice;
-  const cartCountLS = JSON.parse(price).cartCount;
+  // const price = localStorage.getItem("cart-values");
+  // const netPrice = JSON.parse(price).totalPrice;
+  // const cartCountLS = JSON.parse(price).cartCount;
 
-  // const { netPrice, cartCountLS } = useGetItems();
+  const genx = useGetItems();
+  console.log(genx)
 
   const toggleModal = () => setModalOpen(!isModalOpen);
 
@@ -24,7 +25,7 @@ export default function CartSummary() {
         <span className="mr-5 hover:text-white flex items-center">
           <CartIcon />
           <span className="ml-3">
-            {formattedNetPrice(netPrice)} ({cartCountLS})
+            {formattedNetPrice()} ({})
           </span>
         </span>
       </nav>
