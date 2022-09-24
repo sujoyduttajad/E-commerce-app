@@ -1,9 +1,10 @@
 import { formatCurrencyString } from "use-shopping-cart";
 
-export default function formattedNetPrice(product) {
+export default function formattedNetPrice(totalPrice) {
+    
     return formatCurrencyString({
-        value: product.price,
-        currency: product.currency,
+        value: totalPrice,
+        currency: 'USD',
         language: navigator.language,
     });
 
