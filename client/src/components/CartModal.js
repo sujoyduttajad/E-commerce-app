@@ -1,17 +1,18 @@
 // @ts-nocheck
 import React from "react";
 import Modal from "react-modal";
-import { useShoppingCart } from "use-shopping-cart";
 import formattedNetPrice from "utils/formattedNetPrice";
 import { useGetItems } from "utils/useGetItems";
+import CartItem from "./CartItem";
 
 Modal.setAppElement("#root");
 
 export default function CartModal({ isModalOpen, toggleModal }) {
   
-  const [totalPrice, cartCount] = useGetItems();
-  const { cartDetails } = useShoppingCart();
-  console.log(cartDetails);
+  const [totalPrice, cartCount, cartDetails] = useGetItems();
+  
+  // convert the Object inside object structure of cartDetails into an Array of objects
+  const cartItems = Object.keys(cartDetails).map(key => cartDetails[key]);
 
   return (
     <Modal
@@ -30,6 +31,11 @@ export default function CartModal({ isModalOpen, toggleModal }) {
               </div>
             </div>
             <hr />
+            {
+              cartItems.map(cartItem => (
+                <CartItem key={cartItem.id} cartItem={cartItem} />
+              ))
+            }
             <div className="ml-auto mt-4">
               <button
                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
