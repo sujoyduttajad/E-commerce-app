@@ -1,10 +1,13 @@
 // @ts-nocheck
 import React from "react";
 import Modal from "react-modal";
+import formattedNetPrice from "utils/formattedNetPrice";
+import { useGetItems } from "utils/useGetItems";
 
 Modal.setAppElement("#root");
 
 export default function CartModal({ isModalOpen, toggleModal }) {
+  const [totalPrice, cartCount] = useGetItems();
   return (
     <Modal
       isOpen={isModalOpen}
@@ -17,7 +20,8 @@ export default function CartModal({ isModalOpen, toggleModal }) {
           <div className="flex flex-col items-start p-4 full m">
             <div className="flex items-center w-full mb-4">
               <div className="text-gray-900 font-medium text-lg">
-                Cart Summary: Total Price (Cart Count Items)
+                Cart Summary: {formattedNetPrice(totalPrice)} ({cartCount}{" "}
+                Items)
               </div>
             </div>
             <hr />
