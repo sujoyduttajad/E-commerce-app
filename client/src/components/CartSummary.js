@@ -4,16 +4,20 @@ import CartModal from "./CartModal";
 import { CartIcon } from "./Icons";
 
 export default function CartSummary() {
-
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setModalOpen] = useState(false);
 
   const price = localStorage.getItem("cart-values");
   const netPrice = JSON.parse(price).totalPrice;
   const cartCountLS = JSON.parse(price).cartCount;
-  
+
+  const toggleModal = () => setModalOpen(!isModalOpen);
+
   return (
     <React.Fragment>
-      <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
+      <nav
+        onClick={toggleModal}
+        className="md:ml-auto flex flex-wrap items-center text-base justify-center"
+      >
         <span className="mr-5 hover:text-white flex items-center">
           <CartIcon />
           <span className="ml-3">
@@ -21,7 +25,7 @@ export default function CartSummary() {
           </span>
         </span>
       </nav>
-      <CartModal />
+      <CartModal isModalOpen={isModalOpen} toggleModal={toggleModal} />
     </React.Fragment>
   );
 }
