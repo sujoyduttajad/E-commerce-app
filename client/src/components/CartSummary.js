@@ -6,7 +6,7 @@ import { CartIcon } from "./Icons";
 
 export default function CartSummary() {
   const [isModalOpen, setModalOpen] = useState(false);
-  const [ totalPrice, cartCount ] = useGetItems()
+  const [totalPrice, cartCount] = useGetItems();
 
   const toggleModal = () => setModalOpen(!isModalOpen);
 
@@ -14,12 +14,12 @@ export default function CartSummary() {
     <React.Fragment>
       <nav
         onClick={toggleModal}
-        className="md:ml-auto flex flex-wrap items-center text-base justify-center"
+        className="md:ml-auto hover:bg-sky-500 p-3 flex flex-wrap items-center text-base justify-center cursor-pointer"
       >
         <span className="mr-5 hover:text-white flex items-center">
           <CartIcon />
           <span className="ml-3">
-            {formattedNetPrice(totalPrice)} ({ cartCount })
+            {formattedNetPrice(totalPrice)} ({cartCount})
           </span>
         </span>
       </nav>
