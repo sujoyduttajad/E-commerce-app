@@ -1,16 +1,18 @@
 import React, {useEffect} from 'react'
+import { useShoppingCart } from 'use-shopping-cart';
 
 export const useGetItems = () => {
+    const { cartCount } = useShoppingCart();
   
   useEffect(() => {
     function getCartValues() {
-        const price = localStorage.getItem("cart-values");
-        const totalPrice = JSON.parse(price).totalPrice;
-        const cartCount = JSON.parse(price).cartCount;
-        return { totalPrice, cartCount }
+        const price = JSON.parse(localStorage.getItem("cart-values"));
+        const totalPrice = price.totalPrice;
+        const cartCount = price.cartCount;
+        return price;
     }
     getCartValues();
-  }, [localStorage.getItem("cart-values")]) ;
+  }, [cartCount]) ;
   
   
   return;
