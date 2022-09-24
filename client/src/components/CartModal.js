@@ -1,13 +1,18 @@
 // @ts-nocheck
 import React from "react";
 import Modal from "react-modal";
+import { useShoppingCart } from "use-shopping-cart";
 import formattedNetPrice from "utils/formattedNetPrice";
 import { useGetItems } from "utils/useGetItems";
 
 Modal.setAppElement("#root");
 
 export default function CartModal({ isModalOpen, toggleModal }) {
+  
   const [totalPrice, cartCount] = useGetItems();
+  const { cartDetails } = useShoppingCart();
+  console.log(cartDetails);
+
   return (
     <Modal
       isOpen={isModalOpen}
