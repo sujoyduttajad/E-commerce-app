@@ -1,10 +1,11 @@
-import React from "react";
-import { useShoppingCart } from "use-shopping-cart";
+import React, { useState } from "react";
 import formattedNetPrice from "utils/formattedNetPrice";
 import CartModal from "./CartModal";
 import { CartIcon } from "./Icons";
 
 export default function CartSummary() {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const price = localStorage.getItem("cart-values");
   const netPrice = JSON.parse(price).totalPrice;
