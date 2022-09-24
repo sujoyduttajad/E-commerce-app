@@ -21,7 +21,7 @@ export default function CartItem({ cartItem }) {
             style={{ width: 50 }}
             className="border-solid border-2"
             type="number"
-            value={0}
+            value={cartItem.quantity}
             min={0}
           />
         </div>
