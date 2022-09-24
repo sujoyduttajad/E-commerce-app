@@ -4,9 +4,14 @@ import Modal from "react-modal";
 
 Modal.setAppElement("#root");
 
-export default function CartModal() {
+export default function CartModal({ isModalOpen, toggleModal }) {
   return (
-    <Modal contentLabel="Cart Modal" closeTimeoutMS={500}>
+    <Modal
+      isOpen={isModalOpen}
+      onRequestClose={toggleModal}
+      contentLabel="Cart Modal"
+      closeTimeoutMS={500}
+    >
       <div className="flex items-center justify-center fixed left-0 bottom-0 w-full h-full bg-gray-800">
         <div className="bg-white rounded-lg w-80 sm:w-1/2 md:w-2/3 lg:w-1/2">
           <div className="flex flex-col items-start p-4 full m">
