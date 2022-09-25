@@ -8,6 +8,7 @@ export default function CartItem({ cartItem }) {
   const handleSetItemQuantity = (event) => {
     setItemQuantity(cartItem.sku, event.target.value);
   }
+  console.log(cartItem.sku)
 
   return (
     <div className="flex w-full">
@@ -27,7 +28,7 @@ export default function CartItem({ cartItem }) {
           <input
             style={{ width: 50 }}
             className="border-solid border-2"
-            value={cartItem.quantity}
+            defaultValue={cartItem.quantity}
             onChange={handleSetItemQuantity}
             type="number"
             min={0}
