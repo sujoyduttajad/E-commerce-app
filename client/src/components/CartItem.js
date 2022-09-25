@@ -25,8 +25,8 @@ export default function CartItem({ cartItem }) {
         </div>
         <div>
           <input
-            style={{ width: 50 }}
-            className="border-solid border-2"
+            style={{ width: 60 }}
+            className="border-solid border-2 pl-3 focus:outline-none"
             defaultValue={cartItem.quantity}
             onChange={handleSetItemQuantity}
             type="number"
