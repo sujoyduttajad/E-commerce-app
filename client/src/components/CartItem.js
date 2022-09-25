@@ -8,7 +8,6 @@ export default function CartItem({ cartItem }) {
   const handleSetItemQuantity = (event) => {
     setItemQuantity(cartItem.sku, event.target.value);
   }
-  console.log(cartItem.sku)
 
   return (
     <div className="flex w-full">
