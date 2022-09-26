@@ -37,7 +37,7 @@ export default function CartModal({ isModalOpen, toggleModal }) {
             ))}
             <div className="ml-auto mt-4">
               <button
-                className="focus:outline-none bg-primary hover:bg-blue-700 
+                className="focus:outline-none bg-blue-900 hover:bg-blue-800 
                 text-white font-bold py-2 px-4 rounded"
                 style={{ marginRight: 4 }}
               >
@@ -45,7 +45,7 @@ export default function CartModal({ isModalOpen, toggleModal }) {
               </button>
               <button
                 className="focus:outline-none bg-transparent hover:bg-gray-500 
-              text-blue-700 font-semibold hover:text-white py-2 px-4 border 
+              text-blue-900 font-semibold hover:text-white py-2 px-4 border 
               border-blue-500 hover:border-transparent rounded"
               >
                 Still Shopping
