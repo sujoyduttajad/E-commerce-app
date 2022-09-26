@@ -11,9 +11,9 @@ export default function CartSummary() {
 
   return (
     <React.Fragment>
-      <nav
+      <button
         onClick={toggleModal}
-        className="md:ml-auto hover:bg-sky-500 p-3 flex flex-wrap items-center text-base justify-center cursor-pointer"
+        className="focus:outline-none bg-transparent hover:bg-gray-700 rounded mr-3 md:ml-auto p-1 pl-3 flex flex-wrap items-center text-base justify-center cursor-pointer"
       >
         <span className="mr-5 hover:text-white flex items-center">
           <CartIcon />
@@ -21,7 +21,7 @@ export default function CartSummary() {
             {formattedTotalPrice} ({cartCount})
           </span>
         </span>
-      </nav>
+      </button>
       <CartModal isModalOpen={isModalOpen} toggleModal={toggleModal} />
     </React.Fragment>
   );
