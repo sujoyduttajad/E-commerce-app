@@ -1,14 +1,13 @@
 // @ts-nocheck
 import React from "react";
 import Modal from "react-modal";
-import formattedNetPrice from "utils/formattedNetPrice";
-import { useGetItems } from "utils/useGetItems";
+import { useShoppingCart } from "use-shopping-cart";
 import CartItem from "./CartItem";
 
 Modal.setAppElement("#root");
 
 export default function CartModal({ isModalOpen, toggleModal }) {
-  const [totalPrice, cartCount, cartDetails] = useGetItems();
+  const { cartCount, formattedTotalPrice, cartDetails } = useShoppingCart();
 
   // convert the Object inside object structure of cartDetails into an Array of objects
   const cartItems = Object.keys(cartDetails).map((key) => cartDetails[key]);
@@ -25,8 +24,7 @@ export default function CartModal({ isModalOpen, toggleModal }) {
           <div className="flex flex-col items-start p-4 full m">
             <div className="flex items-center w-full mb-4">
               <div className="text-gray-900 font-medium text-lg">
-                Cart Summary: {formattedNetPrice(totalPrice)} ({cartCount}{" "}
-                Items)
+                Cart Summary: {formattedTotalPrice} ({cartCount} Items)
               </div>
             </div>
             <hr />
