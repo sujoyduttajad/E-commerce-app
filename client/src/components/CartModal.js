@@ -18,6 +18,7 @@ export default function CartModal({ isModalOpen, toggleModal }) {
       onRequestClose={toggleModal}
       contentLabel="Cart Modal"
       closeTimeoutMS={500}
+      shouldCloseOnOverlayClick={true}
     >
       <div className="flex items-center justify-center fixed left-0 bottom-0 w-full h-full bg-gray-800">
         <div className="bg-white rounded-lg w-80 sm:w-1/2 md:w-2/3 lg:w-1/2">
