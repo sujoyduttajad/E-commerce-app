@@ -11,7 +11,10 @@ export default function CartItem({ cartItem }) {
 
   return (
     <div className="flex w-full">
-      <div className="flex items-center px-4 py-3 hover:bg-gray-100 -mx-4 w-full justify-between">
+      <div
+        className="flex items-center px-4 py-3 hover:bg-gray-100 -mx-4 
+      w-full justify-between"
+      >
         <div className="flex">
           <img
             className="h-16 w-16 rounded-full object-cover mx-1"
