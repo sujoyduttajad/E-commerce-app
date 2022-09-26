@@ -28,7 +28,6 @@ export default function Product() {
     );
 
   const price = formatProductPrice(product);
-  console.log(product)
 
   return (
     <section className="text-gray-400 bg-gray-900 body-font overflow-hidden">
