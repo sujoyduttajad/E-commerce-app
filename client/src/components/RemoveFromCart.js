@@ -3,7 +3,7 @@ import toast from "react-hot-toast";
 import { useShoppingCart } from "use-shopping-cart";
 
 export default function RemoveFromCart({ product }) {
-  const { removeItem, cartCount, cartDetails } = useShoppingCart();
+  const { removeItem, cartCount } = useShoppingCart();
 
   const handleRemoveItem = () => {
     removeItem(product.id);
