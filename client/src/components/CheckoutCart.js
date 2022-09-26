@@ -3,8 +3,8 @@ import React from "react";
 export default function CheckoutCart() {
   return (
     <button
-      className="inline-flex items-center bg-green-700 border-0 py-1 px-3 
-      focus:outline-none hover:bg-green-600 rounded text-white mt-4 md:mt-0"
+      className="inline-flex items-center bg-blue-900 border-0 py-1 px-3 
+      focus:outline-none hover:bg-yellow-600 rounded text-white mt-4 md:mt-0"
     >
       Go To Checkout
       <svg
