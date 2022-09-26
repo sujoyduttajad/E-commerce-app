@@ -7,12 +7,13 @@ export default function AddToCart({ product }) {
 
   const handleAddItem = () => {
     addItem(product);
-    toast.success(`${product.name} is added to your cart!`)
-  }
+    toast.success(`${product.name} is added to your cart!`);
+  };
 
   return (
-    <button 
-      className="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded"
+    <button
+      className="flex ml-auto text-white bg-blue-900 border-0 py-2 px-6 
+      focus:outline-none hover:bg-blue-800 rounded"
       onClick={handleAddItem}
     >
       Add To Cart
