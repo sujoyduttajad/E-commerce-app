@@ -34,6 +34,22 @@
         background: #111827;
       }
 
+      * {
+        scrollbar-width: thin !important;
+        scrollbar-color: rgba(165, 165, 165, 0.2) transparent !important;
+      }
+      *::-webkit-scrollbar {
+        width: 8px;
+      }
+      *::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      *::-webkit-scrollbar-thumb {
+        background: rgba(165, 165, 165, 0.2);
+        border-radius: 0px;
+        border: transparent;
+      }
+
       .lds-ring {
         display: inline-block;
         position: relative;
