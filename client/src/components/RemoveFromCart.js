@@ -4,7 +4,7 @@ import { useShoppingCart } from "use-shopping-cart";
 
 export default function RemoveFromCart({ product }) {
   const { removeItem, cartCount, cartDetails } = useShoppingCart();
-  console.log(product)
+
   const handleRemoveItem = () => {
     removeItem(product.sku);
     toast.success(`${product.name} is removed from your cart!`);
