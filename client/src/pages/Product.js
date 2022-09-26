@@ -27,7 +27,8 @@ export default function Product() {
       </div>
     );
 
-  const price = formatProductPrice(product);  
+  const price = formatProductPrice(product);
+  console.log(product)
 
   return (
     <section className="text-gray-400 bg-gray-900 body-font overflow-hidden">
@@ -47,7 +48,7 @@ export default function Product() {
             </h1>
             <p className="leading-relaxed">{product.description_long}</p>
             <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
-            <div className="flex">
+            <div className="flex flex-wrap">
               <span className="title-font font-medium text-2xl text-white">
                 {price}
               </span>
