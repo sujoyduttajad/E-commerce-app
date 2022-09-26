@@ -13,12 +13,12 @@ const queryClient = new QueryClient();
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
       <CartProvider
         cartMode="checkout-session"
         stripe={process.env.REACT_APP_STRIPE}
         currency="USD"
       >
+        <Navbar />
         <QueryClientProvider client={queryClient}>
           <Toaster position="bottom-center" />
           <Switch>
