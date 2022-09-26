@@ -5,8 +5,10 @@ import formatProductPrice from "utils/formatProductPrice";
 export default function CartItem({ cartItem }) {
   const { setItemQuantity } = useShoppingCart();
 
+  console.log(cartItem)
+
   const handleSetItemQuantity = (event) => {
-    setItemQuantity(cartItem.sku, event.target.value);
+    setItemQuantity(cartItem.id, event.target.value);
   };
 
   return (
