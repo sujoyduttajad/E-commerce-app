@@ -4,21 +4,19 @@ import Result from "./pages/Result";
 import Product from "./pages/Product";
 import { QueryClientProvider, QueryClient } from "react-query";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { loadStripe } from "@stripe/stripe-js";
 import { CartProvider } from "use-shopping-cart";
 import { Toaster } from "react-hot-toast";
 import Navbar from "components/Navbar";
 
 const queryClient = new QueryClient();
-const stripePromise = loadStripe(process.env.REACT_APP_STRIPE);
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <CartProvider
-        mode="checkout-session"
-        stripe={stripePromise}
+        cartMode="checkout-session"
+        stripe={process.env.REACT_APP_STRIPE}
         currency="USD"
       >
         <QueryClientProvider client={queryClient}>
