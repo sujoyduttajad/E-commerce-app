@@ -3,7 +3,7 @@ import toast from "react-hot-toast";
 import { useShoppingCart } from "use-shopping-cart";
 
 export default function AddToCart({ product }) {
-  const { addItem, cartDetails } = useShoppingCart();
+  const { addItem } = useShoppingCart();
 
   const handleAddItem = () => {
     addItem(product);
