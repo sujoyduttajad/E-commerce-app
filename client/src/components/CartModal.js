@@ -19,6 +19,7 @@ export default function CartModal({ isModalOpen, toggleModal }) {
       contentLabel="Cart Modal"
       closeTimeoutMS={500}
       shouldCloseOnOverlayClick={true}
+      shouldCloseOnEsc={true}
     >
       <div
         className="flex items-center justify-center fixed left-0 bottom-0 w-full 
@@ -38,7 +39,7 @@ export default function CartModal({ isModalOpen, toggleModal }) {
             <div className="ml-auto mt-4">
               <button
                 className="focus:outline-none bg-blue-900 hover:bg-blue-800 
-                text-white font-bold py-2 px-4 rounded"
+                text-white font-semibold py-2 px-4 rounded"
                 style={{ marginRight: 4 }}
               >
                 Checkout Now
