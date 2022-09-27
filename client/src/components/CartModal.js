@@ -27,10 +27,29 @@ export default function CartModal({ isModalOpen, toggleModal }) {
       >
         <div className="bg-white rounded-lg w-80 sm:w-1/2 md:w-2/3 lg:w-1/2">
           <div className="flex flex-col items-start p-4 full m">
-            <div className="flex items-center w-full mb-4">
-              <div className="text-gray-900 font-medium text-lg">
+            <div className="flex justify-between items-center w-full mb-4">
+              <div className="flex justify-between text-gray-900 font-medium text-lg">
                 Cart Summary: {formattedTotalPrice} ({cartCount} Items)
               </div>
+              <button
+                onClick={toggleModal}
+                className="focus:outline-none bg-transparent hover:bg-gray-700 
+                 hover:text-white rounded mr-3 md:ml-auto p-1 pl-2 pr-2 w-28
+                 flex flex-wrap items-center text-base justify-center cursor-pointer"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  className="w-5 h-4 ml-1 rotate-90 pr-1"
+                  viewBox="0 0 20 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>{" "}
+                Back
+              </button>
             </div>
             <hr />
             {cartItems.map((cartItem) => (
