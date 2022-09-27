@@ -33,9 +33,9 @@ export default function CartModal({ isModalOpen, toggleModal }) {
               </div>
               <button
                 onClick={toggleModal}
-                className="focus:outline-none bg-transparent hover:bg-gray-700 
-                 hover:text-white rounded mr-3 md:ml-auto p-1 pl-2 pr-2 w-28
-                 flex flex-wrap items-center text-base justify-center cursor-pointer"
+                className="focus:outline-none bg-transparent hover:bg-gray-500 
+                 hover:text-white rounded p-1 pl-2 pr-2 w-28 font-semibold
+                 flex flex-wrap items-center text-blue-900 text-base justify-center cursor-pointer"
               >
                 <svg
                   fill="none"
@@ -43,7 +43,7 @@ export default function CartModal({ isModalOpen, toggleModal }) {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  className="w-5 h-4 ml-1 rotate-90 pr-1"
+                  className="w-5 h-4 ml-1 transform rotate-180 mr-2"
                   viewBox="0 0 20 24"
                 >
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
