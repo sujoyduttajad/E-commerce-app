@@ -12,5 +12,11 @@ export default function useCheckout() {
                 toast.error("Checkout Failed!!");
                 console.log("Error during Checkout: ", error);
             });
+
+        if(session) {
+            redirectToCheckout(session.id);
+        }
     }
+
+    return handleCheckout;
 }
