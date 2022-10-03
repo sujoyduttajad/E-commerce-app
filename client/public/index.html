@@ -105,6 +105,7 @@
         height: 300px;
         outline: none;
         padding: 20px;
+        opacity: 1;
       }
 
       .myoverlay {
@@ -113,7 +114,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #111827;
+        /* background-color: #111827; */
       }
 
       .ReactModal__Overlay {
@@ -129,12 +130,20 @@
         opacity: 0;
       }
 
+      .ReactModal__Content {
+        opacity: 0.9;
+        background: transparent !important;
+      }
+      .ReactModal__Content--after-open {
+        background-color: transparent ;
+      }
+
       input[type="number"]::-webkit-inner-spin-button,
       input[type="number"]::-webkit-outer-spin-button {
         opacity: 1;
       }
     </style>
-    <title>React Shopper</title>
+    <title>PRIMART</title>
   </head>
 
   <body>
