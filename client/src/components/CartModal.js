@@ -2,12 +2,14 @@
 import React from "react";
 import Modal from "react-modal";
 import { useShoppingCart } from "use-shopping-cart";
+import useCheckout from "utils/useCheckout";
 import CartItem from "./CartItem";
 
 Modal.setAppElement("#root");
 
 export default function CartModal({ isModalOpen, toggleModal }) {
   const { cartCount, formattedTotalPrice, cartDetails } = useShoppingCart();
+  const handleCheckout = useCheckout();
 
   // convert the Object inside object structure of cartDetails into an Array of objects
   const cartItems = Object.keys(cartDetails).map((key) => cartDetails[key]);
@@ -60,6 +62,7 @@ export default function CartModal({ isModalOpen, toggleModal }) {
                 className="focus:outline-none bg-blue-900 hover:bg-blue-800 
                 text-white font-semibold py-2 px-4 rounded"
                 style={{ marginRight: 4 }}
+                onClick={handleCheckout}
               >
                 Checkout Now
               </button>
