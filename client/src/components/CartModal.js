@@ -25,7 +25,7 @@ export default function CartModal({ isModalOpen, toggleModal }) {
     >
       <div
         className="flex items-center justify-center fixed left-0 bottom-0 w-full 
-      h-full bg-gray-800"
+      h-full bg-gray-800 bg-opacity-100"
       >
         <div className="bg-white rounded-lg w-80 sm:w-1/2 md:w-2/3 lg:w-1/2">
           <div className="flex flex-col items-start p-4 full m">
