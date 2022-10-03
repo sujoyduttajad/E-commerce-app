@@ -34,7 +34,7 @@ function getSingleProduct(req, res) {
   }
 }
 
-function createCheckoutSession(req, res) {
+async function createCheckoutSession(req, res) {
   try {
     const cartItems = req.body;
     const line_items = validateCartItems(products, cartItems);
@@ -56,5 +56,11 @@ function createCheckoutSession(req, res) {
       cancel_url: origin,
       mode: 'payment'
     };
-  } catch (error) {}
+
+    const checkoutSession = await stripe.checkout.sessions.create(params);
+
+    res.status(200).json(checkoutSession);
+  } catch (error) {
+    res.status(500).json({ statusCode: 500, message: error.message })
+  }
 }
