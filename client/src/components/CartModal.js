@@ -8,6 +8,7 @@ import CartItem from "./CartItem";
 Modal.setAppElement("#root");
 
 export default function CartModal({ isModalOpen, toggleModal }) {
+
   const { cartCount, formattedTotalPrice, cartDetails } = useShoppingCart();
   const handleCheckout = useCheckout();
 
@@ -70,6 +71,7 @@ export default function CartModal({ isModalOpen, toggleModal }) {
                 className="focus:outline-none bg-transparent hover:bg-gray-500 
               text-blue-900 font-semibold hover:text-white py-2 px-4 border 
               border-blue-500 hover:border-transparent rounded"
+                onClick={toggleModal}
               >
                 Still Shopping
               </button>
