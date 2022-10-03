@@ -7,7 +7,10 @@ export default function useCheckout() {
     
     async function handleCheckout() {
         const session = await axios.post('/api/checkout-sessions', cartDetails)
-            .then(res => res.data)
+            .then(res => {
+                console.log(res.data)
+                return res.data
+            })
             .catch(error => {
                 toast.error("Checkout Failed!!");
                 console.log("Error during Checkout: ", error);
