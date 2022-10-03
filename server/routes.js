@@ -1,6 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const products = require("./products.json");
+const stripe = require('stripe')(process.env.STRIPE_API_SECRET)
 const { validateCartItems } = require("use-shopping-cart/src/serverUtil");
 
 module.exports = function getRoutes() {
@@ -53,6 +54,7 @@ function createCheckoutSession(req, res) {
       line_items,
       success_url: `${origin}/result?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: origin,
+      mode: 'payment'
     };
   } catch (error) {}
 }
