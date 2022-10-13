@@ -2,16 +2,15 @@ import React from "react";
 import toast from "react-hot-toast";
 import { useShoppingCart } from "use-shopping-cart";
 
-export default function RemoveFromCart({ product }) {
-  const { removeItem, cartCount, cartDetails } = useShoppingCart();
+export default function RemoveFromCart({ product, currentProduct }) {
+  const { removeItem, cartCount } = useShoppingCart();
 
   const handleRemoveItem = () => {
     removeItem(product.id);
     toast.success(`${product.name} is removed from your cart!`);
   };
 
-  const cartItems = Object.keys(cartDetails).map((key) => cartDetails[key]);
-  const currentProduct = cartItems.filter((cart) => cart.id === product.id);
+  
 
   return (
     <button
