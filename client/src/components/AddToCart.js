@@ -10,6 +10,7 @@ export default function AddToCart({ product, currentProduct }) {
     toast.success(`${product.name} is added to your cart!`);
   };
 
+  // We need to include functionality to increment and decrement quantity
 
   return (
     <>
