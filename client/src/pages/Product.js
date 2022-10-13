@@ -31,8 +31,9 @@ export default function Product() {
 
   const price = formatProductPrice(product);
 
-  const cartItems = Object.keys(cartDetails).map((key) => cartDetails[key]);
-  const currentProduct = cartItems.filter((cart) => cart.id === product.id);
+  const currentProduct = Object.keys(cartDetails)
+    .map((key) => cartDetails[key])
+    .filter((cart) => cart.id === product.id);
 
   return (
     <section className="text-gray-400 bg-gray-900 body-font overflow-hidden">
