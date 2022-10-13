@@ -53,11 +53,16 @@ export default function Product() {
             <p className="leading-relaxed">{product.description_long}</p>
             <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
             <div className="flex flex-wrap">
-              <span className="title-font font-medium text-2xl text-white">
+              <span className="title-font font-medium text-2xl text-white pr-6 mb-4">
                 {price}
               </span>
-              <AddToCart product={product} currentProduct={currentProduct} />
-              <RemoveFromCart product={product} currentProduct={currentProduct} />
+              <div className="flex flex-nowrap mb-4">
+                <AddToCart product={product} currentProduct={currentProduct} />
+                <RemoveFromCart
+                  product={product}
+                  currentProduct={currentProduct}
+                />
+              </div>
             </div>
           </div>
         </div>
