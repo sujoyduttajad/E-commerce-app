@@ -12,7 +12,6 @@ export default function RemoveFromCart({ product }) {
 
   const cartItems = Object.keys(cartDetails).map((key) => cartDetails[key]);
   const currentProduct = cartItems.filter((cart) => cart.id === product.id);
-  console.log(currentProduct)
 
   return (
     <button
