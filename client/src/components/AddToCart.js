@@ -22,7 +22,7 @@ export default function AddToCart({ product, currentProduct }) {
           Add To Cart
         </button>
       ) : (
-        <div className="flex border-white ml-auto px-6 pr-0">
+        <div className="flex border-white ml-auto pr-0">
           <button className="flex text-white bg-blue-900 border-gray-50 py-2 px-6 focus:outline-none hover:bg-blue-800 rounded-l font-normal">
             -
           </button>
