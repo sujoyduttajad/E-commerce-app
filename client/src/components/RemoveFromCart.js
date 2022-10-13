@@ -3,12 +3,16 @@ import toast from "react-hot-toast";
 import { useShoppingCart } from "use-shopping-cart";
 
 export default function RemoveFromCart({ product }) {
-  const { removeItem, cartCount } = useShoppingCart();
+  const { removeItem, cartCount, cartDetails } = useShoppingCart();
 
   const handleRemoveItem = () => {
     removeItem(product.id);
     toast.success(`${product.name} is removed from your cart!`);
   };
+
+  const cartItems = Object.keys(cartDetails).map((key) => cartDetails[key]);
+  const currentProduct = cartItems.filter((cart) => cart.id === product.id);
+  console.log(currentProduct)
 
   return (
     <button
@@ -16,16 +20,10 @@ export default function RemoveFromCart({ product }) {
       focus:outline-none hover:bg-yellow-200 rounded font-medium"
       onClick={handleRemoveItem}
       disabled={!cartCount}
-      // style={{
-      //   cursor: `${
-      //     cartCount > 0 && cartDetails.name === product.name
-      //       ? "pointer"
-      //       : "not-allowed"
-      //   }`,
-      //   opacity: `${
-      //     cartCount > 0 && cartDetails.name === product.name ? 1 : 0.5
-      //   }`,
-      // }}
+      style={{
+        cursor: `${currentProduct.length !== 0 ? "pointer" : "not-allowed"}`,
+        opacity: `${currentProduct.length !== 0 ? 1 : 0.5}`,
+      }}
     >
       Remove Item
     </button>
