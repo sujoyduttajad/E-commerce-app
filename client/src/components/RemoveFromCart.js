@@ -12,8 +12,8 @@ export default function RemoveFromCart({ product }) {
 
   return (
     <button
-      className="flex ml-2 text-white bg-yellow-700 border-0 py-2 px-6 
-      focus:outline-none hover:bg-yellow-600 rounded"
+      className="flex ml-2 text-indigo-900 bg-yellow-100 border-0 py-2 px-6 
+      focus:outline-none hover:bg-yellow-200 rounded font-medium"
       onClick={handleRemoveItem}
       disabled={!cartCount}
       // style={{
