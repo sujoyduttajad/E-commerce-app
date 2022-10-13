@@ -7,8 +7,10 @@ import LoadingSpinner from "../components/LoadingSpinner";
 import formatProductPrice from "../utils/formatProductPrice";
 import AddToCart from "../components/AddToCart";
 import RemoveFromCart from "../components/RemoveFromCart";
+import { useShoppingCart } from "use-shopping-cart";
 
 export default function Product() {
+  const { cartDetails } = useShoppingCart();
   const { productId } = useParams();
   const {
     data: product,
@@ -28,6 +30,9 @@ export default function Product() {
     );
 
   const price = formatProductPrice(product);
+
+  const cartItems = Object.keys(cartDetails).map((key) => cartDetails[key]);
+  const currentProduct = cartItems.filter((cart) => cart.id === product.id);
 
   return (
     <section className="text-gray-400 bg-gray-900 body-font overflow-hidden">
@@ -51,8 +56,8 @@ export default function Product() {
               <span className="title-font font-medium text-2xl text-white">
                 {price}
               </span>
-              <AddToCart product={product} />
-              <RemoveFromCart product={product} />
+              <AddToCart product={product} currentProduct={currentProduct} />
+              <RemoveFromCart product={product} currentProduct={currentProduct} />
             </div>
           </div>
         </div>
