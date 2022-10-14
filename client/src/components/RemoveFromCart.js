@@ -10,8 +10,6 @@ export default function RemoveFromCart({ product, currentProduct }) {
     toast.success(`${product.name} is removed from your cart!`);
   };
 
-  
-
   return (
     <button
       className="flex ml-2 text-indigo-900 bg-yellow-100 border-0 py-2 px-6 
