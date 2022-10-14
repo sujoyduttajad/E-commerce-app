@@ -7,6 +7,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { CartProvider } from "use-shopping-cart";
 import { Toaster } from "react-hot-toast";
 import Navbar from "components/Navbar";
+import Footer from "components/Footer";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ function App() {
             <Route path="/:productId" component={Product} />
           </Switch>
         </QueryClientProvider>
+        <Footer />
       </CartProvider>
     </BrowserRouter>
   );
