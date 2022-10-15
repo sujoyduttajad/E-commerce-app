@@ -16,37 +16,82 @@ const Footer = () => {
         </Link>
       </div>
       <div className="w-auto flex items-start justify-between">
-        <ul className="list-none flex flex-col font-normal text-gray-400 px-4">
+        <ul className="list-none flex flex-col justify-evenly font-normal text-gray-400 px-4">
           <li>
-            <Link to="/AboutUs">About Us</Link>
+            <Link
+              to="/AboutUs"
+              className="title-font hover:text-gray-300 hover:underline md:mb-0"
+            >
+              About Us
+            </Link>
           </li>
           <li>
-            <Link to="/Account">My Account</Link>
+            <Link
+              to="/Account"
+              className="title-font hover:text-gray-300 hover:underline md:mb-0"
+            >
+              My Account
+            </Link>
           </li>
           <li>
-            <Link to="/Blog">Primart Blog</Link>
+            <Link
+              to="/Blog"
+              className="title-font hover:text-gray-300 hover:underline md:mb-0"
+            >
+              Primart Blog
+            </Link>
           </li>
         </ul>
         <ul className="list-none flex flex-col font-normal text-gray-400 px-4">
           <li>
-            <Link to="/OrderTracking">Order Tracking</Link>
+            <Link
+              to="/OrderTracking"
+              className="title-font hover:text-gray-300 hover:underline md:mb-0"
+            >
+              Order Tracking
+            </Link>
           </li>
           <li>
-            <Link to="/Refunds">Refund Policy</Link>
+            <Link
+              to="/Refunds"
+              className="title-font hover:text-gray-300 hover:underline md:mb-0"
+            >
+              Refund Policy
+            </Link>
           </li>
           <li>
-            <Link to="/Shipping">Shipping Policy</Link>
+            <Link
+              to="/Shipping"
+              className="title-font hover:text-gray-300 hover:underline md:mb-0"
+            >
+              Shipping Policy
+            </Link>
           </li>
         </ul>
         <ul className="list-none flex flex-col font-normal text-gray-400 px-4">
           <li>
-            <Link to="/Support">Help & Support</Link>
+            <Link
+              to="/Support"
+              className="title-font hover:text-gray-300 hover:underline py-4 md:mb-0"
+            >
+              Help & Support
+            </Link>
           </li>
           <li>
-            <Link to="/Privacy">Privacy Policy</Link>
+            <Link
+              to="/Privacy"
+              className="title-font hover:text-gray-300 hover:underline py-4 md:mb-0"
+            >
+              Privacy Policy
+            </Link>
           </li>
           <li>
-            <Link to="/TermsConditions">Terms & Conditions</Link>
+            <Link
+              to="/TermsConditions"
+              className="title-font hover:text-gray-300 hover:underline py-4 md:mb-0"
+            >
+              Terms & Conditions
+            </Link>
           </li>
         </ul>
       </div>
