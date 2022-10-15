@@ -17,6 +17,7 @@ const Footer = () => {
       </div>
       <div className="w-auto flex items-start justify-between">
         <ul className="list-none flex flex-col justify-evenly font-normal text-gray-400 px-4">
+            <p className="font-medium text-gray-300 tracking-wider pb-3" >Our Brand</p>
           <li>
             <Link
               to="/AboutUs"
@@ -43,6 +44,7 @@ const Footer = () => {
           </li>
         </ul>
         <ul className="list-none flex flex-col justify-evenly font-normal text-gray-400 px-4">
+        <p className="font-medium text-gray-300 tracking-wider pb-3" >Products</p>
           <li>
             <Link
               to="/OrderTracking"
@@ -69,6 +71,7 @@ const Footer = () => {
           </li>
         </ul>
         <ul className="list-none flex flex-col justify-evenly font-normal text-gray-400 px-4">
+        <p className="font-medium text-gray-300 tracking-wider pb-3" >Media</p>
           <li>
             <Link
               to="/Support"
@@ -95,14 +98,16 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className="w-auto flex flex-col items-start justify-between pl-4">
+      <div className="w-auto flex flex-col items-start justify-between pr-4">
         <h3 className="font-semibold text-2xl text-gray-400 subpixel-antialiased pb-3 tracking-wide">
           Contact Us
         </h3>
         <p className="font-normal text-gray-400 text-sm">
           Got Questions? Call us 24/7
         </p>
-        <p className="font-normal text-gray-400 text-xl pb-2">(0600) 874 548</p>
+        <p className="font-normal text-gray-400 text-xl pb-2 font-mono">
+          (0600) 874 548
+        </p>
         <p className="font-normal text-gray-300 text-base">
           Email -{" "}
           <span className="font-light text-gray-400 text-base">
