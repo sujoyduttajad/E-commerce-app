@@ -32,15 +32,15 @@ const Footer = () => {
           <li>Terms & Conditions</li>
         </ul>
       </div>
-      <div className="w-auto flex items-start justify-between">
-        <h3 className="font-semibold text-2xl text-gray-400 antialiased">
+      <div className="w-auto flex flex-col items-start justify-between">
+        <h3 className="font-semibold text-2xl text-gray-400 antialiased pb-3">
           Contact Us
         </h3>
         <p className="font-normal text-gray-400 text-sm">
           Got Questions? Call us 24/7
         </p>
-        <p className="font-normal text-gray-400 text-xl">(0600) 874 548</p>
-        <p className="font-medium text-gray-300 text-base">
+        <p className="font-normal text-gray-400 text-xl pb-2">(0600) 874 548</p>
+        <p className="font-medium text-gray-300 text-base ">
           Email -{" "}
           <span className="font-light text-gray-400 text-base">
             support@primart.com
