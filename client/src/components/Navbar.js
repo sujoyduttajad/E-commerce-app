@@ -13,8 +13,10 @@ export default function Navbar() {
             <LogoIcon paramWidth="" paramHeight="" />
           </span>
         </Link>
+        <div className="flex flex-nowrap">
         <CartSummary />
         <CheckoutCart />
+        </div>
       </div>
     </header>
   );
