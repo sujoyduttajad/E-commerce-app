@@ -11,7 +11,7 @@ const Footer = () => {
             <LogoIcon paramWidth={180} paramHeight={36} />
           </span>
           <h2 className="tracking-widest text-xs title-font font-medium text-gray-500 mb-1 mt-6 text-lg">
-            Primart Inc. Pvt. Limited
+            Primart Pvt. Limited
           </h2>
         </Link>
       </div>
@@ -32,7 +32,7 @@ const Footer = () => {
           <li>Terms & Conditions</li>
         </ul>
       </div>
-      <div className="w-auto flex flex-col items-start justify-between">
+      <div className="w-auto flex flex-col items-start justify-between pl-4">
         <h3 className="font-semibold text-2xl text-gray-400 antialiased pb-3">
           Contact Us
         </h3>
@@ -43,7 +43,7 @@ const Footer = () => {
         <p className="font-normal text-gray-300 text-base">
           Email -{" "}
           <span className="font-light text-gray-400 text-base">
-            support@primart.com
+            <a href="mailto:sujoyduttajad@gmail.com">support@primart.com</a>
           </span>
         </p>
       </div>
