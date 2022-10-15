@@ -21,7 +21,7 @@ const Footer = () => {
           <li>
             <Link
               to="/AboutUs"
-              className="title-font hover:text-gray-300 hover:underline md:mb-0"
+              className="title-font hover:text-gray-300 hover:underline md:mb-0 leading-5"
             >
               About Us
             </Link>
@@ -29,7 +29,7 @@ const Footer = () => {
           <li>
             <Link
               to="/Account"
-              className="title-font hover:text-gray-300 hover:underline md:mb-0"
+              className="title-font hover:text-gray-300 hover:underline md:mb-0 leading-5"
             >
               My Account
             </Link>
@@ -37,7 +37,7 @@ const Footer = () => {
           <li>
             <Link
               to="/Blog"
-              className="title-font hover:text-gray-300 hover:underline md:mb-0"
+              className="title-font hover:text-gray-300 hover:underline md:mb-0 leading-5"
             >
               Primart Blog
             </Link>
@@ -48,7 +48,7 @@ const Footer = () => {
           <li>
             <Link
               to="/OrderTracking"
-              className="title-font hover:text-gray-300 hover:underline md:mb-0"
+              className="title-font hover:text-gray-300 hover:underline md:mb-0 leading-5"
             >
               Order Tracking
             </Link>
@@ -56,7 +56,7 @@ const Footer = () => {
           <li>
             <Link
               to="/Refunds"
-              className="title-font hover:text-gray-300 hover:underline md:mb-0"
+              className="title-font hover:text-gray-300 hover:underline md:mb-0 leading-5"
             >
               Refund Policy
             </Link>
@@ -64,7 +64,7 @@ const Footer = () => {
           <li>
             <Link
               to="/Shipping"
-              className="title-font hover:text-gray-300 hover:underline md:mb-0"
+              className="title-font hover:text-gray-300 hover:underline md:mb-0 leading-5"
             >
               Shipping Policy
             </Link>
@@ -75,7 +75,7 @@ const Footer = () => {
           <li>
             <Link
               to="/Support"
-              className="title-font hover:text-gray-300 hover:underline py-4 md:mb-0"
+              className="title-font hover:text-gray-300 hover:underline py-4 md:mb-0 leading-5"
             >
               Help & Support
             </Link>
@@ -83,7 +83,7 @@ const Footer = () => {
           <li>
             <Link
               to="/Privacy"
-              className="title-font hover:text-gray-300 hover:underline py-4 md:mb-0"
+              className="title-font hover:text-gray-300 hover:underline py-4 md:mb-0 leading-5"
             >
               Privacy Policy
             </Link>
@@ -91,7 +91,7 @@ const Footer = () => {
           <li>
             <Link
               to="/TermsConditions"
-              className="title-font hover:text-gray-300 hover:underline py-4 md:mb-0"
+              className="title-font hover:text-gray-300 hover:underline py-4 md:mb-0 leading-5"
             >
               Terms & Conditions
             </Link>
