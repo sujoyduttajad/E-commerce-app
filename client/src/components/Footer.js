@@ -135,15 +135,26 @@ const Footer = () => {
       {/* Divider */}
       <hr className="w-9/12 m-auto border-1 border-gray-700" />
       {/* Copyright section */}
-      <div className="flex items-start w-auto justify-around p-6 pb-2 h-auto">
+      <div className="flex items-start w-auto justify-around p-8 pb-2 h-auto">
         <p className="font-normal text-gray-400 text-sm">
           Copyright© {currYear()}. All rights reserved.
+        </p>
+        <p className="font-normal text-gray-400 text-sm">
+          Made with 💗 by{" "}
+          <a
+            href="https://github.com/sujoyduttajad/E-commerce-app"
+            target="blank"
+            className="title-font hover:text-gray-300 hover:underline md:mb-0 leading-5"
+          >
+            Sujoy Dutta
+          </a>
         </p>
       </div>
       {/* Disclaimer */}
       <div className="flex items-center justify-evenly py-6 pb-8 h-auto">
-        <p className="font-normal text-gray-400 text-sm">
-          By using this website, you understand the information being presented is provided for informational purposes only
+        <p className="font-normal text-center text-gray-500 text-sm">
+          By using this website, you understand the information being presented
+          is provided for informational purposes only
         </p>
       </div>
     </footer>
