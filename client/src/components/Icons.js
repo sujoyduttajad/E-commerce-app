@@ -1,10 +1,10 @@
 import React from "react";
 
-export function LogoIcon() {
+export function LogoIcon({ paramWidth, paramHeight}) {
   return (
     <svg
-      width="232"
-      height="49"
+      width={`${paramWidth ? paramWidth : "232" }`}
+      height={`${paramHeight ? paramHeight : "49" }`}
       viewBox="0 0 232 49"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
