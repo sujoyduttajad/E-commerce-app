@@ -11,12 +11,12 @@ const Footer = () => {
             <LogoIcon paramWidth={230} paramHeight={50} />
             <Tagline paramWidth={280} paramHeight={50} />
           </span>
-          <h2 className="tracking-widest text-xs title-font font-medium text-gray-500 mb-1 mt-2 text-lg">
-            Primart Pvt. Limited
+          <h2 className="tracking-wider text-xs title-font font-medium text-gray-500 mb-1 mt-2 text-lg">
+            Primart® Pvt. Limited
           </h2>
         </Link>
       </div>
-      <div className="w-auto flex items-start justify-between">
+      <div className="w-auto flex items-start flex-wrap justify-between">
         <ul className="list-none flex flex-col justify-evenly font-normal text-gray-400 px-4">
             <p className="font-medium text-gray-300 tracking-wider pb-3" >Our Brand</p>
           <li>
