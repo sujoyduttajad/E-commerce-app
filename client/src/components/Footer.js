@@ -4,14 +4,14 @@ import { LogoIcon, Tagline } from "./Icons";
 
 const Footer = () => {
   return (
-    <footer className="flex items-center justify-between h-60 p-10">
+    <footer className="flex items-center justify-evenly h-60 p-10">
       <div className="w-auto flex flex-col items-start pl-2">
         <Link to="/" className="title-font text-white md:mb-0">
           <span className="flex flex-col items-start justify-start">
-            <LogoIcon paramWidth={180} paramHeight={36} />
-            <Tagline paramWidth={180} paramHeight={36} />
+            <LogoIcon paramWidth={230} paramHeight={50} />
+            <Tagline paramWidth={280} paramHeight={50} />
           </span>
-          <h2 className="tracking-widest text-xs title-font font-medium text-gray-500 mb-1 mt-6 text-lg">
+          <h2 className="tracking-widest text-xs title-font font-medium text-gray-500 mb-1 mt-2 text-lg">
             Primart Pvt. Limited
           </h2>
         </Link>
