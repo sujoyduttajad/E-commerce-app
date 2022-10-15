@@ -1,12 +1,13 @@
 import React from "react";
-import { Envelope } from "./Icons";
+import { Envelope, MailIcon } from "./Icons";
 
 const Newsletter = () => {
   return (
-    <section className="w-full flex flex-wrap items-center justify-center bg-gray-800 h-36">
-      <div className="flex p-3" >
+    <section className="w-full flex flex-wrap items-center justify-center bg-gray-800 h-48">
+      <div className="flex p-3 items-center ">
+      <MailIcon paramWidth="" paramHeight="" />
         <div className="flex flex-col p-4 mr-5">
-          <h2 className="tracking-wider text-xs title-font font-medium text-white mb-1 mt-2 text-4xl">
+          <h2 className="tracking-wider text-xs title-font font-medium text-white text-4xl">
             Newsletter
           </h2>
           <p className="font-light text-sm">
