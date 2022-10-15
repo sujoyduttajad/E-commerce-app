@@ -159,8 +159,8 @@ const Footer = () => {
           </ul>
         </div>
         {/* Contact section */}
-        <div className="w-auto flex flex-col items-start lg:justify-between pr-4 justify-start">
-          <h3 className="font-semibold text-2xl text-gray-400 subpixel-antialiased pb-3 tracking-wide">
+        <div className="w-auto h-auto flex flex-col items-start lg:justify-between pr-4 justify-start">
+          <h3 className="font-semibold text-2xl text-gray-300 subpixel-antialiased py-3 tracking-wide">
             Contact Us
           </h3>
           <p className="font-normal text-gray-400 text-sm">
