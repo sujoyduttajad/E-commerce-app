@@ -17,23 +17,41 @@ const Footer = () => {
       </div>
       <div className="w-auto flex items-start justify-between">
         <ul className="list-none flex flex-col font-normal text-gray-400 px-4">
-          <li>About Us</li>
-          <li>My Account</li>
-          <li>Primart Blog</li>
+          <li>
+            <Link to="/AboutUs">About Us</Link>
+          </li>
+          <li>
+            <Link to="/Account">My Account</Link>
+          </li>
+          <li>
+            <Link to="/Blog">Primart Blog</Link>
+          </li>
         </ul>
         <ul className="list-none flex flex-col font-normal text-gray-400 px-4">
-          <li>Order Tracking</li>
-          <li>Refund Policy</li>
-          <li>Shipping Policy</li>
+          <li>
+            <Link to="/OrderTracking">Order Tracking</Link>
+          </li>
+          <li>
+            <Link to="/Refunds">Refund Policy</Link>
+          </li>
+          <li>
+            <Link to="/Shipping">Shipping Policy</Link>
+          </li>
         </ul>
         <ul className="list-none flex flex-col font-normal text-gray-400 px-4">
-          <li>Help & Support</li>
-          <li>Privacy Policy</li>
-          <li>Terms & Conditions</li>
+          <li>
+            <Link to="/Support">Help & Support</Link>
+          </li>
+          <li>
+            <Link to="/Privacy">Privacy Policy</Link>
+          </li>
+          <li>
+            <Link to="/TermsConditions">Terms & Conditions</Link>
+          </li>
         </ul>
       </div>
       <div className="w-auto flex flex-col items-start justify-between pl-4">
-        <h3 className="font-semibold text-2xl text-gray-400 antialiased pb-3">
+        <h3 className="font-semibold text-2xl text-gray-400 subpixel-antialiased pb-3 tracking-wide">
           Contact Us
         </h3>
         <p className="font-normal text-gray-400 text-sm">
