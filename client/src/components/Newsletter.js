@@ -14,20 +14,27 @@ const Newsletter = () => {
           </p>
         </div>
       </div>
-      <form>
-        <div className="relative mb-6">
-          <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-            <Envelope />
-          </div>
+
+      <div className="relative w-auto flex">
+        <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+          <Envelope />
+        </div>
+        <form>
           <input
             type="text"
             id="input-group-1"
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="name@flowbite.com"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm 
+            rounded focus:ring-blue-500 focus:outline-blue-500 block w-full pl-10 p-2.5"
+            placeholder="johndoe@gmail.com"
           />
-        </div>
-        <button>Subscribe Now</button>
-      </form>
+          <button
+            className="flex absolute items-center bg-blue-900 border-0 py-1 px-3 
+                focus:outline-none hover:bg-blue-800 rounded text-white md:mt-0"
+          >
+            Subscribe Now
+          </button>
+        </form>
+      </div>
     </section>
   );
 };
