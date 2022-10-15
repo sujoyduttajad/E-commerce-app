@@ -2,7 +2,13 @@ import React from 'react'
 
 const Newsletter = () => {
   return (
-    <div>Newsletter</div>
+    <section>
+        <div></div>
+        <form>
+            <input />
+            <button>Subscribe Now</button>
+        </form>
+    </section>
   )
 }
 
