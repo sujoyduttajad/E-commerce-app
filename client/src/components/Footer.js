@@ -26,10 +26,10 @@ const Footer = () => {
         {/* Hyperlinks/Resource section */}
         <div className="w-auto flex items-start flex-wrap justify-between">
           <ul className="list-none flex flex-col justify-evenly font-normal text-gray-400 px-4">
-            <p className="font-medium text-gray-300 tracking-wider pb-3">
+            <p className="font-medium text-gray-300 tracking-wider py-3">
               Our Brand
             </p>
-            <li>
+            <li className="leading-6 pb-1">
               <Link
                 to="/AboutUs"
                 className="title-font hover:text-gray-300 hover:underline md:mb-0 leading-5"
@@ -37,7 +37,7 @@ const Footer = () => {
                 About Us
               </Link>
             </li>
-            <li>
+            <li className="leading-6 pb-1">
               <Link
                 to="/Account"
                 className="title-font hover:text-gray-300 hover:underline md:mb-0 leading-5"
@@ -45,7 +45,7 @@ const Footer = () => {
                 My Account
               </Link>
             </li>
-            <li>
+            <li className="leading-6 pb-1">
               <Link
                 to="/Blog"
                 className="title-font hover:text-gray-300 hover:underline md:mb-0 leading-5"
@@ -53,12 +53,57 @@ const Footer = () => {
                 Primart Blog
               </Link>
             </li>
+            <li className="leading-6 pb-1">
+              <Link
+                to="/Seller"
+                className="title-font hover:text-gray-300 hover:underline md:mb-0 leading-5"
+              >
+                Seller
+              </Link>
+            </li>
           </ul>
           <ul className="list-none flex flex-col justify-evenly font-normal text-gray-400 px-4">
-            <p className="font-medium text-gray-300 tracking-wider pb-3">
+            <p className="font-medium text-gray-300 tracking-wider py-3 ">
+              Media
+            </p>
+            <li className="leading-6 pb-1">
+              <Link
+                to="https://facebook.com/home"
+                className="title-font hover:text-gray-300 hover:underline py-4 md:mb-0 leading-5"
+              >
+                Facebook
+              </Link>
+            </li>
+            <li className="leading-6 pb-1">
+              <Link
+                to="https://www.instagram.com/"
+                className="title-font hover:text-gray-300 hover:underline py-4 md:mb-0 leading-5"
+              >
+                Instagram
+              </Link>
+            </li>
+            <li className="leading-6 pb-1">
+              <Link
+                to="https://twitter.com/home"
+                className="title-font hover:text-gray-300 hover:underline py-4 md:mb-0 leading-5"
+              >
+                Twitter
+              </Link>
+            </li>
+            <li className="leading-6 pb-1">
+              <Link
+                to="https://in.pinterest.com/"
+                className="title-font hover:text-gray-300 hover:underline py-4 md:mb-0 leading-5"
+              >
+                Pinterest
+              </Link>
+            </li>
+          </ul>
+          <ul className="list-none flex flex-col justify-evenly font-normal text-gray-400 px-4">
+            <p className="font-medium text-gray-300 tracking-wider py-3">
               Products
             </p>
-            <li>
+            <li className="leading-6 pb-1">
               <Link
                 to="/OrderTracking"
                 className="title-font hover:text-gray-300 hover:underline md:mb-0 leading-5"
@@ -66,7 +111,7 @@ const Footer = () => {
                 Order Tracking
               </Link>
             </li>
-            <li>
+            <li className="leading-6 pb-1">
               <Link
                 to="/Refunds"
                 className="title-font hover:text-gray-300 hover:underline md:mb-0 leading-5"
@@ -74,7 +119,7 @@ const Footer = () => {
                 Refund Policy
               </Link>
             </li>
-            <li>
+            <li className="leading-6 pb-1">
               <Link
                 to="/Shipping"
                 className="title-font hover:text-gray-300 hover:underline md:mb-0 leading-5"
@@ -84,10 +129,10 @@ const Footer = () => {
             </li>
           </ul>
           <ul className="list-none flex flex-col justify-evenly font-normal text-gray-400 px-4">
-            <p className="font-medium text-gray-300 tracking-wider pb-3">
-              Media
+            <p className="font-medium text-gray-300 tracking-wider py-3">
+              Support
             </p>
-            <li>
+            <li className="leading-6 pb-1">
               <Link
                 to="/Support"
                 className="title-font hover:text-gray-300 hover:underline py-4 md:mb-0 leading-5"
@@ -95,7 +140,7 @@ const Footer = () => {
                 Help & Support
               </Link>
             </li>
-            <li>
+            <li className="leading-6 pb-1">
               <Link
                 to="/Privacy"
                 className="title-font hover:text-gray-300 hover:underline py-4 md:mb-0 leading-5"
@@ -103,7 +148,7 @@ const Footer = () => {
                 Privacy Policy
               </Link>
             </li>
-            <li>
+            <li className="leading-6 pb-1">
               <Link
                 to="/TermsConditions"
                 className="title-font hover:text-gray-300 hover:underline py-4 md:mb-0 leading-5"
