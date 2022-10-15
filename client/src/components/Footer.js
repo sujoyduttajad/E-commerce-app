@@ -129,7 +129,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <hr className="w-9/12 m-auto border-4 border-blue-500 cursor-pointer hover:border-red-500 duration-500" />
+      <hr className="w-9/12 m-auto border-1 border-gray-500" />
       <div className="flex items-center justify-evenly h-48">
         <p className="font-normal text-gray-400 text-sm">
           Copyright© {currYear()}. All rights reserved.
