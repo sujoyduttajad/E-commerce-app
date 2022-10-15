@@ -10,7 +10,7 @@ export default function CheckoutCart() {
   return (
     <button
       className="inline-flex items-center bg-blue-900 border-0 py-1 px-3 
-      focus:outline-none hover:bg-blue-800 rounded text-white mt-4 md:mt-0"
+      focus:outline-none hover:bg-blue-800 rounded text-white md:mt-0"
       onClick={handleCheckout}
       disabled={!cartCount}
     >
