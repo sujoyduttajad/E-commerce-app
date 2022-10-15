@@ -10,7 +10,8 @@ const currYear = () => {
 const Footer = () => {
   return (
     <footer className="flex flex-col h-auto p-10">
-      <div className="flex items-center justify-evenly h-48">
+      <div className="flex flex-wrap items-center justify-evenly pb-20 h-auto">
+        {/* Brand Section */}
         <div className="w-auto flex flex-col items-start pl-2">
           <Link to="/" className="title-font text-white md:mb-0">
             <span className="flex flex-col items-start justify-start">
@@ -22,6 +23,7 @@ const Footer = () => {
             </h2>
           </Link>
         </div>
+        {/* Hyperlinks/Resource section */}
         <div className="w-auto flex items-start flex-wrap justify-between">
           <ul className="list-none flex flex-col justify-evenly font-normal text-gray-400 px-4">
             <p className="font-medium text-gray-300 tracking-wider pb-3">
@@ -111,6 +113,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+        {/* Contact section */}
         <div className="w-auto flex flex-col items-start justify-between pr-4">
           <h3 className="font-semibold text-2xl text-gray-400 subpixel-antialiased pb-3 tracking-wide">
             Contact Us
@@ -129,10 +132,18 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <hr className="w-9/12 m-auto border-1 border-gray-500" />
-      <div className="flex items-center justify-evenly h-48">
+      {/* Divider */}
+      <hr className="w-9/12 m-auto border-1 border-gray-700" />
+      {/* Copyright section */}
+      <div className="flex items-start w-auto justify-around p-6 pb-2 h-auto">
         <p className="font-normal text-gray-400 text-sm">
           Copyright© {currYear()}. All rights reserved.
+        </p>
+      </div>
+      {/* Disclaimer */}
+      <div className="flex items-center justify-evenly py-6 pb-8 h-auto">
+        <p className="font-normal text-gray-400 text-sm">
+          By using this website, you understand the information being presented is provided for informational purposes only
         </p>
       </div>
     </footer>
