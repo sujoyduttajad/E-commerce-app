@@ -42,7 +42,7 @@ const Footer = () => {
             </Link>
           </li>
         </ul>
-        <ul className="list-none flex flex-col font-normal text-gray-400 px-4">
+        <ul className="list-none flex flex-col justify-evenly font-normal text-gray-400 px-4">
           <li>
             <Link
               to="/OrderTracking"
@@ -68,7 +68,7 @@ const Footer = () => {
             </Link>
           </li>
         </ul>
-        <ul className="list-none flex flex-col font-normal text-gray-400 px-4">
+        <ul className="list-none flex flex-col justify-evenly font-normal text-gray-400 px-4">
           <li>
             <Link
               to="/Support"
