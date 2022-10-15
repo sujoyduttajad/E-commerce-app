@@ -8,9 +8,9 @@ export default function Home() {
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap -m-4">
           <ProductList />
-          <Newsletter />
         </div>
       </div>
+      <Newsletter />
     </section>
   );
 }
