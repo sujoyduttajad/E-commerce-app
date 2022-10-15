@@ -10,7 +10,7 @@ export default function Navbar() {
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <Link to="/" className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
           <span className="flex items-center justify-center ml-3 text-xl">
-            <LogoIcon />
+            <LogoIcon paramWidth="" paramHeight="" />
           </span>
         </Link>
         <CartSummary />
