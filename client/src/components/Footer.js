@@ -1,14 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { LogoIcon } from "./Icons";
+import { LogoIcon, Tagline } from "./Icons";
 
 const Footer = () => {
   return (
     <footer className="flex items-center justify-between h-60 p-10">
       <div className="w-auto flex flex-col items-start pl-2">
         <Link to="/" className="title-font text-white md:mb-0">
-          <span className="flex items-start justify-start">
+          <span className="flex flex-col items-start justify-start">
             <LogoIcon paramWidth={180} paramHeight={36} />
+            <Tagline paramWidth={180} paramHeight={36} />
           </span>
           <h2 className="tracking-widest text-xs title-font font-medium text-gray-500 mb-1 mt-6 text-lg">
             Primart Pvt. Limited
