@@ -24,8 +24,8 @@ const Footer = () => {
           </Link>
         </div>
         {/* Hyperlinks/Resource section */}
-        <div className="w-auto flex items-start flex-wrap justify-between">
-          <ul className="list-none flex flex-col justify-evenly font-normal text-gray-400 px-4">
+        <div className="w-auto flex flex-wrap items-start justify-between">
+          <ul className="list-none flex flex-col flex-wrap justify-evenly font-normal text-gray-400 px-4">
             <p className="font-medium text-gray-300 tracking-wider py-3">
               Our Brand
             </p>
@@ -62,7 +62,7 @@ const Footer = () => {
               </Link>
             </li>
           </ul>
-          <ul className="list-none flex flex-col justify-evenly font-normal text-gray-400 px-4">
+          <ul className="list-none flex flex-col flex-wrap justify-evenly font-normal text-gray-400 px-4">
             <p className="font-medium text-gray-300 tracking-wider py-3 ">
               Media
             </p>
@@ -99,7 +99,7 @@ const Footer = () => {
               </Link>
             </li>
           </ul>
-          <ul className="list-none flex flex-col justify-evenly font-normal text-gray-400 px-4">
+          <ul className="list-none flex flex-col flex-wrap justify-evenly font-normal text-gray-400 px-4">
             <p className="font-medium text-gray-300 tracking-wider py-3">
               Products
             </p>
@@ -128,7 +128,7 @@ const Footer = () => {
               </Link>
             </li>
           </ul>
-          <ul className="list-none flex flex-col justify-evenly font-normal text-gray-400 px-4">
+          <ul className="list-none flex flex-col flex-wrap justify-evenly font-normal text-gray-400 px-4">
             <p className="font-medium text-gray-300 tracking-wider py-3">
               Support
             </p>
