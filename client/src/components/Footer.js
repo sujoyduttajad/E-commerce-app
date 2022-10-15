@@ -7,10 +7,10 @@ const Footer = () => {
     <footer className="flex items-center justify-between h-60 p-10">
       <div className="w-auto flex flex-col items-start pl-2">
         <Link to="/" className="title-font text-white md:mb-0">
-          <span className="flex items-start justify-center">
-            <LogoIcon />
+          <span className="flex items-start justify-start">
+            <LogoIcon paramWidth={180} paramHeight={36} />
           </span>
-          <h2 className="tracking-widest text-xs title-font font-medium text-gray-500 mb-1 mt-6 pl-3 text-lg">
+          <h2 className="tracking-widest text-xs title-font font-medium text-gray-500 mb-1 mt-6 text-lg">
             Primart Inc. Pvt. Limited
           </h2>
         </Link>
@@ -40,7 +40,7 @@ const Footer = () => {
           Got Questions? Call us 24/7
         </p>
         <p className="font-normal text-gray-400 text-xl pb-2">(0600) 874 548</p>
-        <p className="font-medium text-gray-300 text-base ">
+        <p className="font-normal text-gray-300 text-base">
           Email -{" "}
           <span className="font-light text-gray-400 text-base">
             support@primart.com
