@@ -16,7 +16,7 @@ function App() {
     <BrowserRouter>
       <CartProvider
         cartMode="checkout-session"
-        stripe={process.env.REACT_APP_STRIPE}
+        stripe={process.env.REACT_APP_STRIPE_KEY}
         currency="USD"
       >
         <Navbar />
