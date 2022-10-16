@@ -25,14 +25,14 @@ export default function Navbar() {
             <input
               type="text"
               id="input-group-1"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm leading-loose 
-            rounded focus:ring-blue-500 focus:outline-blue-500 min-w-96 w-full pl-10 p-2.5 pr-"
+              className="bg-gray-50 border border-gray-300 bg-gray-200 text-gray-900 text-sm leading-loose 
+            rounded focus:outline-blue-500 min-w-96 w-full pl-10 py-1.5 pr-"
               placeholder="Search here"
             />
             <button
-              className="flex absolute right-1.5 bottom-1.5 items-center bg-blue-900 border-0 px-3 
+              className="flex absolute right-1.5 bottom-1 items-center bg-blue-900 border-0 px-3 
                 focus:outline-none hover:bg-blue-800 rounded text-white md:mt-0 
-                focus:ring-4 focus:ring-blue-300 font-medium text-md px-4 py-2"
+                focus:ring-4 focus:ring-blue-300 font-medium text-md px-4 py-1"
             >
               Search
             </button>
