@@ -175,6 +175,9 @@ const Footer = () => {
               <a href="mailto:sujoyduttajad@gmail.com">support@primart.com</a>
             </span>
           </p>
+          <p className="font-normal text-gray-300 text-base">
+            5 Ondricka Esplanade, Bettyeville, NZ, 2670
+          </p>
         </div>
       </div>
       {/* Divider */}
