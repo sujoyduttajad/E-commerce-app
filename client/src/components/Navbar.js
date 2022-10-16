@@ -17,8 +17,8 @@ export default function Navbar() {
           </span>
         </Link>
         {/* Search Bar */}
-        <div className="relative">
-          <form className="w-96">
+        <div className="relative mb-3">
+          <form className="lg:w-96 w-auto">
             <div className="flex absolute inset-y-0 left-0 items-center pl-3">
               <SearchGrayIcon paramWidth={20} paramHeight={20} />
             </div>
@@ -26,13 +26,13 @@ export default function Navbar() {
               type="text"
               id="input-group-1"
               className="bg-gray-50 border border-gray-300 bg-gray-200 text-gray-900 text-sm leading-loose 
-            rounded focus:outline-blue-500 min-w-96 w-full pl-10 py-1.5 pr-"
+            rounded focus:ring-4 lg:min-w-full max-w-full lg:w-full w-80 pl-10 py-1.5  "
               placeholder="Search here"
             />
             <button
-              className="flex absolute right-1.5 bottom-1 items-center bg-blue-900 border-0 px-3 
+              className="flex absolute lg:right-1.5 bottom-1 right-1 items-center bg-blue-900 border-0 px-3 
                 focus:outline-none hover:bg-blue-800 rounded text-white md:mt-0 
-                focus:ring-4 focus:ring-blue-300 font-medium text-md px-4 py-1"
+                 font-medium text-md px-4 py-1"
             >
               Search
             </button>
