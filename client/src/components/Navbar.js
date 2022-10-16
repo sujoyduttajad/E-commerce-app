@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import CartSummary from "./CartSummary";
 import CheckoutCart from "./CheckoutCart";
-import { LogoIcon, SearchIcon } from "./Icons";
+import { LogoIcon, SearchGrayIcon } from "./Icons";
 
 export default function Navbar() {
   return (
@@ -20,7 +20,7 @@ export default function Navbar() {
         <div className="relative">
           <form className="w-96">
             <div className="flex absolute inset-y-0 left-0 items-center pl-3">
-              <SearchIcon paramWidth={20} paramHeight={20} />
+              <SearchGrayIcon paramWidth={20} paramHeight={20} />
             </div>
             <input
               type="text"
