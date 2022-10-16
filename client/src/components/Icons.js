@@ -120,11 +120,11 @@ export function MailIcon({ paramWidth, paramHeight }) {
   );
 }
 
-export function SearchIcon() {
+export function SearchIcon({ paramWidth, paramHeight }) {
   return (
     <svg
-      width="41"
-      height="41"
+      width={`${paramWidth ? paramWidth : "41"}`}
+      height={`${paramHeight ? paramHeight : "41"}`}
       viewBox="0 0 41 41"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
