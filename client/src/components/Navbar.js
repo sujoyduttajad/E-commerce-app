@@ -20,7 +20,7 @@ export default function Navbar() {
         <div className="relative">
           <form className="w-96">
             <div className="flex absolute inset-y-0 left-0 items-center pl-3">
-              <SearchIcon paramWidth="" paramHeight="" />
+              <SearchIcon paramWidth={20} paramHeight={20} />
             </div>
             <input
               type="text"
