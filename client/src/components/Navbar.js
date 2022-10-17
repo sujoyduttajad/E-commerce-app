@@ -17,7 +17,7 @@ export default function Navbar() {
           </span>
         </Link>
         {/* Search Bar */}
-        <div className="relative flex items-center sm:mb-3 lg:mb-0 md:mb-0">
+        <div className="relative flex w-full items-center sm:mb-3 lg:mb-0">
           <form className="lg:w-96 w-auto">
             <div className="flex absolute inset-y-0 left-0 items-center pl-3">
               <SearchGrayIcon paramWidth={20} paramHeight={20} />
@@ -26,7 +26,7 @@ export default function Navbar() {
               type="text"
               id="input-group-1"
               className="bg-gray-50 border border-gray-300 bg-gray-200 text-gray-900 text-sm leading-loose 
-            rounded focus:ring-4 lg:min-w-full max-w-full lg:w-full w-80 pl-10 py-1.5  "
+            rounded focus:ring-4 lg:min-w-full max-w-full lg:w-full w-full pl-10 py-1.5  "
               placeholder="Search here"
             />
             <button
@@ -38,7 +38,7 @@ export default function Navbar() {
             </button>
           </form>
         </div>
-        <div className="flex flex-nowrap">
+        <div className="flex flex-nowrap justify-between w-full lg:mt-0 mt-2">
           <CartSummary />
           <CheckoutCart />
         </div>
