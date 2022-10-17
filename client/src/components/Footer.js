@@ -9,8 +9,8 @@ const currYear = () => {
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col h-auto p-10">
-      <div className="flex flex-wrap items-center justify-evenly pb-20 h-auto">
+    <footer className="flex flex-col flex-shrink h-auto p-10">
+      <div className="flex flex-wrap items-center justify-between pb-20 h-auto">
         {/* Brand Section */}
         <div className="w-auto flex flex-col items-start pl-2">
           <Link to="/" className="title-font text-white md:mb-0">
@@ -160,8 +160,8 @@ const Footer = () => {
           </ul>
         </div>
         {/* Contact section */}
-        <div className="w-auto h-auto flex flex-col items-start lg:justify-between pr-4 justify-start">
-          <h3 className="font-semibold text-2xl text-gray-300 subpixel-antialiased pb-5 tracking-wide">
+        <div className="w-auto h-auto flex flex-col items-start mt-5 lg:mt-0 justify-start pr-4">
+          <h3 className="amber-color font-semibold text-2xl subpixel-antialiased pb-5 tracking-wide">
             Contact Us
           </h3>
           <p className="font-normal text-gray-400 text-sm">
