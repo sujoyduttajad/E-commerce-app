@@ -3,7 +3,7 @@ import { Envelope, MailIcon } from "./Icons";
 
 const Newsletter = () => {
   return (
-    <article className="w-full flex flex-wrap items-center justify-center h-48">
+    <article className="w-full flex flex-wrap items-center justify-center h-48 px-2 sm:px-2">
       <div className="flex p-3 items-center ">
         <MailIcon paramWidth="" paramHeight="" />
         <div className="flex flex-col p-4 mr-5">
@@ -24,7 +24,7 @@ const Newsletter = () => {
             type="text"
             id="input-group-1"
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm leading-loose 
-            rounded focus:ring-blue-500 focus:outline-blue-500 min-w-96 w-full pl-10 p-2.5 pr-"
+            rounded focus:ring-blue-500 focus:outline-blue-500 min-w-80 w-full pl-10 p-2.5 pr-"
             placeholder="johndoe@gmail.com"
           />
           <button
@@ -32,7 +32,7 @@ const Newsletter = () => {
                 focus:outline-none hover:bg-blue-800 rounded text-white md:mt-0 
                 focus:ring-4 focus:ring-blue-300 font-medium text-md px-4 py-2"
           >
-            Subscribe Now
+            Subscribe
           </button>
         </form>
       </div>
