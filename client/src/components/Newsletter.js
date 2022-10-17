@@ -8,8 +8,8 @@ const Newsletter = () => {
     <article className="w-full flex flex-wrap items-center justify-center h-48 px-2 sm:px-2">
       <div className="flex p-3 items-center ">
         <MailIcon 
-          paramWidth={`${width < 450 ? '40' : ''}`} 
-          paramHeight={`${width < 450 ? '40' : ''}`} 
+          paramWidth={`${width < 450 ? '35' : ''}`} 
+          paramHeight={`${width < 450 ? '35' : ''}`} 
         />
         <div className="flex flex-col p-4 mr-5">
           <h2 className="tracking-wider text-xs title-font font-medium text-white text-4xl">
