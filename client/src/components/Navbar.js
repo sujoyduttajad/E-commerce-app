@@ -7,7 +7,7 @@ import { LogoIcon, SearchGrayIcon } from "./Icons";
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-30 w-full text-gray-400 bg-gray-900 body-font">
-      <div className="container mx-auto flex flex-wrap justify-between p-5 flex-col md:flex-row items-center">
+      <div className="container mx-auto flex flex-wrap justify-between items-center p-5 flex-col md:flex-row ">
         <Link
           to="/"
           className="flex title-font font-medium items-center text-white mb-4 md:mb-0"
@@ -17,7 +17,7 @@ export default function Navbar() {
           </span>
         </Link>
         {/* Search Bar */}
-        <div className="relative mb-3">
+        <div className="relative flex items-center sm:mb-3 lg:mb-0 md:mb-0">
           <form className="lg:w-96 w-auto">
             <div className="flex absolute inset-y-0 left-0 items-center pl-3">
               <SearchGrayIcon paramWidth={20} paramHeight={20} />
