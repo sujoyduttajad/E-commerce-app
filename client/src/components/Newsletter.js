@@ -1,11 +1,16 @@
 import React from "react";
+import useWindowDimensions from "utils/useDimension";
 import { Envelope, MailIcon } from "./Icons";
 
 const Newsletter = () => {
+  const { width } = useWindowDimensions();
   return (
     <article className="w-full flex flex-wrap items-center justify-center h-48 px-2 sm:px-2">
       <div className="flex p-3 items-center ">
-        <MailIcon paramWidth="" paramHeight="" />
+        <MailIcon 
+          paramWidth={`${width < 450 ? '40' : ''}`} 
+          paramHeight={`${width < 450 ? '40' : ''}`} 
+        />
         <div className="flex flex-col p-4 mr-5">
           <h2 className="tracking-wider text-xs title-font font-medium text-white text-4xl">
             Newsletter
