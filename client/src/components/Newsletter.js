@@ -3,7 +3,7 @@ import { Envelope, MailIcon } from "./Icons";
 
 const Newsletter = () => {
   return (
-    <section className="w-full flex flex-wrap items-center justify-center bg-gray-800 h-48">
+    <article className="w-full flex flex-wrap items-center justify-center h-48">
       <div className="flex p-3 items-center ">
         <MailIcon paramWidth="" paramHeight="" />
         <div className="flex flex-col p-4 mr-5">
@@ -36,7 +36,7 @@ const Newsletter = () => {
           </button>
         </form>
       </div>
-    </section>
+    </article>
   );
 };
 
