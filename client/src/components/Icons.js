@@ -3,7 +3,7 @@ import React from "react";
 export function LogoIcon({ paramWidth, paramHeight }) {
   return (
     <svg
-      width={`${paramWidth ? paramWidth : "232"}`}
+      width={`${paramWidth ? paramWidth : "210"}`}
       height={`${paramHeight ? paramHeight : "49"}`}
       viewBox="0 0 232 49"
       fill="none"
