@@ -10,20 +10,22 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-30 w-full text-gray-400 bg-gray-900 body-font">
       <div className="container mx-auto flex flex-wrap justify-between items-center p-5 flex-col md:flex-row ">
-        <div className="p-2 cursor-pointer hover:bg-gray-800">
-          <MenuIcon />
+        <div className="w-full lg:w-max flex flex-nowrap items-center mr-0 lg:mr-1 mb-3 md:mb-0 justify-between sm:justify-between">
+          <div className="p-2 cursor-pointer hover:bg-gray-800 rounded">
+            <MenuIcon />
+          </div>
+          <Link
+            to="/"
+            className="flex title-font font-medium items-center text-white"
+          >
+            <span className="flex items-center justify-center ml-3 text-xl">
+              <LogoIcon
+                paramWidth={`${width < 450 ? "180" : ""}`}
+                paramHeight={`${width < 450 ? "49" : ""}`}
+              />
+            </span>
+          </Link>
         </div>
-        <Link
-          to="/"
-          className="flex title-font font-medium items-center text-white mb-4 md:mb-0"
-        >
-          <span className="flex items-center justify-center ml-3 text-xl">
-            <LogoIcon 
-              paramWidth={`${width < 450 ? '180' : ''}`} 
-              paramHeight={`${width < 450 ? '49' : ''}`} 
-            />
-          </span>
-        </Link>
         {/* Search Bar */}
         <div className="relative flex  items-center sm:mb-3 lg:mb-0">
           <form className="lg:w-96">
