@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import useWindowDimensions from "utils/useDimension";
 import CartSummary from "./CartSummary";
@@ -6,12 +6,19 @@ import CheckoutCart from "./CheckoutCart";
 import { LogoIcon, MenuIcon, SearchGrayIcon } from "./Icons";
 
 export default function Navbar() {
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => setSidebarOpen(!isSidebarOpen);
+
   const { width } = useWindowDimensions();
   return (
     <header className="sticky top-0 z-30 w-full text-gray-400 bg-gray-900 body-font">
       <div className="container mx-auto flex flex-wrap justify-between items-center p-5 flex-col md:flex-row ">
         <div className="w-full lg:w-max flex flex-nowrap items-center mr-0 lg:mr-1 mb-3 md:mb-0 justify-between sm:justify-between">
-          <div className="p-2 cursor-pointer hover:bg-gray-800 rounded">
+          <div
+            onClick={toggleSidebar}
+            className="p-2 cursor-pointer hover:bg-gray-800 rounded"
+          >
             <MenuIcon />
           </div>
           <Link
