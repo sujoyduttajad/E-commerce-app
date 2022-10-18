@@ -3,13 +3,16 @@ import { Link } from "react-router-dom";
 import useWindowDimensions from "utils/useDimension";
 import CartSummary from "./CartSummary";
 import CheckoutCart from "./CheckoutCart";
-import { LogoIcon, SearchGrayIcon } from "./Icons";
+import { LogoIcon, MenuIcon, SearchGrayIcon } from "./Icons";
 
 export default function Navbar() {
   const { width } = useWindowDimensions();
   return (
     <header className="sticky top-0 z-30 w-full text-gray-400 bg-gray-900 body-font">
       <div className="container mx-auto flex flex-wrap justify-between items-center p-5 flex-col md:flex-row ">
+        <div className="p-2 cursor-pointer hover:bg-gray-800">
+          <MenuIcon />
+        </div>
         <Link
           to="/"
           className="flex title-font font-medium items-center text-white mb-4 md:mb-0"
