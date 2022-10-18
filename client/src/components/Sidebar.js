@@ -23,7 +23,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
       preventScroll={false}
     >
       <aside className="w-64 h-full mt-8" aria-label="Sidebar">
-        <div className="overflow-y-auto py-4 px-3 bg-gray-50 rounded dark:bg-gray-800">
+        <div className="h-full overflow-y-auto py-4 px-3 bg-gray-50 rounded dark:bg-gray-800">
           <ul className="space-y-2">
             <li>
               <a
