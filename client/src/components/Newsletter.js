@@ -5,7 +5,7 @@ import { Envelope, MailIcon } from "./Icons";
 const Newsletter = () => {
   const { width } = useWindowDimensions();
   return (
-    <article className="w-full flex flex-wrap items-center justify-center h-48 px-2 sm:px-2">
+    <article className="w-full flex flex-wrap items-center justify-center h-48 pb-60 lg:pb-2">
       <div className="flex p-3 items-center ">
         <MailIcon 
           paramWidth={`${width < 450 ? '35' : ''}`} 
@@ -20,7 +20,7 @@ const Newsletter = () => {
           </p>
         </div>
       </div>
-      <div className="relative">
+      <div className="relative ">
         <form className="w-96">
           <div className="flex absolute inset-y-0 left-0 items-center pl-3">
             <Envelope />
@@ -34,7 +34,7 @@ const Newsletter = () => {
           />
           <button
             className="flex absolute right-1.5 bottom-1.5 items-center bg-blue-900 border-0 px-3 
-                focus:outline-none hover:bg-blue-800 rounded text-white md:mt-0 
+                focus:outline-none hover:bg-blue-800 rounded text-white md:mt-0  
                 focus:ring-4 focus:ring-blue-300 font-medium text-md px-4 py-2"
           >
             Subscribe
