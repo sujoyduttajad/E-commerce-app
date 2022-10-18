@@ -191,7 +191,7 @@ const Footer = () => {
         <p className="font-normal text-gray-400 text-sm">
           Made with 💗 by{" "}
           <a
-            href="https://github.com/sujoyduttajad/E-commerce-app"
+            href="https://github.com/sujoyduttajad"
             target="blank"
             className="title-font hover:text-gray-300 hover:underline md:mb-0 leading-5"
           >
