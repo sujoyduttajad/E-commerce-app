@@ -1,8 +1,9 @@
 import React from "react";
 import {
   HelpIcon,
-  Icon,
+  InfoIcon,
   LogInIcon,
+  Notifications,
   ShoppingBag,
   SignUpIcon,
   UpgradePro,
@@ -21,7 +22,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
       shouldCloseOnEsc={true}
       preventScroll={false}
     >
-      <aside className="w-64" aria-label="Sidebar">
+      <aside className="w-64 h-full mt-8" aria-label="Sidebar">
         <div className="overflow-y-auto py-4 px-3 bg-gray-50 rounded dark:bg-gray-800">
           <ul className="space-y-2">
             <li>
@@ -58,6 +59,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
                 href="#"
                 className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
               >
+                <Notifications />
                 <span className="flex-1 ml-3 whitespace-nowrap">
                   Notifications
                 </span>
@@ -89,7 +91,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
                 href="#"
                 className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
               >
-                <Icon />
+                <InfoIcon />
                 <span className="ml-3">About Us</span>
               </a>
             </li>
