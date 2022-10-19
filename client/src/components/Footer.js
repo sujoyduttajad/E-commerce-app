@@ -182,7 +182,7 @@ const Footer = () => {
         </div>
       </div>
       {/* Divider */}
-      <hr className="w-9/12 m-auto border-1 border-gray-700" />
+      <hr className="w-9/12 m-auto border-1 border-gray-600" />
       {/* Copyright section */}
       <div className="flex items-start w-auto justify-around p-8 pb-2 h-auto">
         <p className="font-normal text-gray-400 text-sm">
