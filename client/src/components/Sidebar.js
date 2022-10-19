@@ -20,9 +20,33 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
       closeTimeoutMS={500}
       shouldCloseOnOverlayClick={true}
       shouldCloseOnEsc={true}
-      preventScroll={false}
+      preventScroll={true}
+      style={{
+        overlay: {
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundColor: 'rgba(255, 255, 255, 0.75)'
+        },
+        content: {
+          position: 'absolute',
+          top: '40px',
+          left: '40px',
+          right: '40px',
+          bottom: '40px',
+          border: '1px solid #ccc',
+          background: '#fff',
+          overflow: 'auto',
+          WebkitOverflowScrolling: 'touch',
+          borderRadius: '4px',
+          outline: 'none',
+          padding: '20px'
+        }
+      }}
     >
-      <aside className="w-64 h-full mt-8" aria-label="Sidebar">
+      <aside className="w-64 h-4/5 mt-8" aria-label="Sidebar">
         <div className="h-full overflow-y-auto py-4 px-3 bg-gray-50 rounded dark:bg-gray-800">
           <ul className="space-y-2">
             <li>
