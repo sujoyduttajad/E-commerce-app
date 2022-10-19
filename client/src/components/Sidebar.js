@@ -23,13 +23,13 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
       shouldCloseOnEsc={true}
       preventScroll={true}
     >
-      <aside className="w-64 h-full mt-8" aria-label="Sidebar">
-        <div className="h-full overflow-y-auto py-4 px-3 bg-gray-50 rounded dark:bg-gray-800">
+      <aside className="sidebar w-64 h-full mt-8" aria-label="Sidebar">
+        <div className="h-full overflow-y-auto py-4 px-3 rounded">
           <ul className="space-y-2">
             <li>
               <a
                 href="#"
-                className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                className="flex items-center p-2 text-base font-normal rounded-lg hover:bg-gray-100"
               >
                 <OrdersIcon />
                 <span className="ml-3">Your Orders</span>
@@ -38,7 +38,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
             <li>
               <a
                 href="#"
-                className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                className="flex items-center p-2 text-base font-normal rounded-lg hover:bg-gray-100"
               >
                 <UserIcon />
                 <span className="flex-1 ml-3 whitespace-nowrap">
@@ -49,7 +49,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
             <li>
               <a
                 href="#"
-                className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                className="flex items-center p-2 text-base font-normal rounded-lg hover:bg-gray-100"
               >
                 <Notifications />
                 <span className="flex-1 ml-3 whitespace-nowrap">
@@ -60,7 +60,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
             <li>
               <a
                 href="#"
-                className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                className="flex items-center p-2 text-base font-normal rounded-lg hover:bg-gray-100"
               >
                 <ShoppingBag />
                 <span className="flex-1 ml-3 whitespace-nowrap">Products</span>
@@ -71,7 +71,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
             <li>
               <a
                 href="#"
-                className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+                className="flex items-center p-2 text-base font-normal rounded-lg transition duration-75 hover:bg-gray-100 group"
               >
                 <UpgradePro />
                 <span className="ml-4">Upgrade to Pro</span>
@@ -80,7 +80,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
             <li>
               <a
                 href="#"
-                className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+                className="flex items-center p-2 text-base font-normal rounded-lg transition duration-75 hover:bg-gray-100 group"
               >
                 <InfoIcon />
                 <span className="ml-3">About Us</span>
@@ -89,7 +89,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
             <li>
               <a
                 href="#"
-                className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+                className="flex items-center p-2 text-base font-normal rounded-lg transition duration-75 hover:bg-gray-100 group"
               >
                 <HelpIcon />
                 <span className="ml-3">Help</span>
@@ -98,7 +98,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
             <li>
               <a
                 href="#"
-                className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                className="flex items-center p-2 text-base font-normal rounded-lg hover:bg-gray-100"
               >
                 <LogInIcon />
                 <span className="flex-1 ml-3 whitespace-nowrap">Log In</span>
@@ -107,7 +107,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
             <li>
               <a
                 href="#"
-                className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                className="flex items-center p-2 text-base font-normal rounded-lg hover:bg-gray-100"
               >
                 <SignUpIcon />
                 <span className="flex-1 ml-3 whitespace-nowrap">Sign Up</span>
