@@ -50,7 +50,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
             </li>
             <li>
               <Link
-                 to="#"
+                 to="/Notifications"
                 className="flex items-center p-2 text-base font-normal rounded-lg   hover:bg-gray-800"
               >
                 <Notifications />
@@ -61,7 +61,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
             </li>
             <li>
               <Link
-                 to="#"
+                 to="/"
                 className="flex items-center p-2 text-base font-normal rounded-lg   hover:bg-gray-800"
               >
                 <ShoppingBag />
