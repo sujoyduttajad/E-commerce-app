@@ -93,10 +93,10 @@ const Footer = () => {
             </li>
             <li className="leading-6 pb-1">
               <Link
-                to="/Shipping"
+                to="/NewArrivals"
                 className="title-font hover:text-gray-300 hover:underline md:mb-0 leading-5"
               >
-                Shipping Policy
+                New Arrivals
               </Link>
             </li>
           </ul>
@@ -141,6 +141,14 @@ const Footer = () => {
             <p className="font-medium text-gray-300 tracking-wider py-3">
               Support
             </p>
+            <li className="leading-6 pb-1">
+              <Link
+                to="/Faqs"
+                className="title-font hover:text-gray-300 hover:underline py-4 md:mb-0 leading-5"
+              >
+                FAQs
+              </Link>
+            </li>
             <li className="leading-6 pb-1">
               <Link
                 to="/Support"
