@@ -105,36 +105,40 @@ const Footer = () => {
               Media
             </p>
             <li className="leading-6 pb-1">
-              <Link
-                to="https://facebook.com/home"
+              <a
+                target="blank"
+                href="https://facebook.com/home"
                 className="title-font hover:text-gray-300 hover:underline py-4 md:mb-0 leading-5"
               >
                 Facebook
-              </Link>
+              </a>
             </li>
             <li className="leading-6 pb-1">
-              <Link
-                to="https://www.instagram.com/"
+              <a
+                target="blank"
+                href="https://www.instagram.com/"
                 className="title-font hover:text-gray-300 hover:underline py-4 md:mb-0 leading-5"
               >
                 Instagram
-              </Link>
+              </a>
             </li>
             <li className="leading-6 pb-1">
-              <Link
-                to="https://twitter.com/home"
+              <a
+                target="blank"
+                href="https://twitter.com/home"
                 className="title-font hover:text-gray-300 hover:underline py-4 md:mb-0 leading-5"
               >
                 Twitter
-              </Link>
+              </a>
             </li>
             <li className="leading-6 pb-1">
-              <Link
-                to="https://in.pinterest.com/"
+              <a
+                target="blank"
+                href="https://in.pinterest.com/"
                 className="title-font hover:text-gray-300 hover:underline py-4 md:mb-0 leading-5"
               >
                 Pinterest
-              </Link>
+              </a>
             </li>
           </ul>
           <ul className="list-none flex flex-col flex-wrap justify-evenly font-normal text-gray-400 px-4">
