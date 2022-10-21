@@ -52,7 +52,7 @@ export default function Product() {
               {product.name}
             </h1>
             <p className="leading-relaxed">{product.description_long}</p>
-            <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+            <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-600 mb-5"></div>
             <div className="flex flex-wrap">
               <span className="title-font font-medium text-2xl text-white pr-6 mb-4">
                 {price}
