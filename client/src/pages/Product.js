@@ -36,7 +36,7 @@ export default function Product() {
     .filter((cart) => cart.id === product.id);
 
   return (
-    <section className="text-gray-400 bg-gray-900 body-font overflow-hidden">
+    <section className="home-page text-gray-400 body-font overflow-hidden">
       <div className="container px-5 py-24 mx-auto">
         <div className="lg:w-4/5 mx-auto flex flex-wrap">
           <img
