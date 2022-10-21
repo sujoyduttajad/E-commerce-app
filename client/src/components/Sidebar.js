@@ -28,7 +28,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
       <aside className="sidebar w-64 h-5/6 mt-8 rounded" aria-label="Sidebar">
         <div className="h-full overflow-y-auto py-4 px-3 rounded">
           <ul className="space-y-2">
-            <button className="w-full">
+            <button className="w-full" onClick={toggleSidebar}>
               <Link
                 to="/OrderTracking"
                 className="flex items-center p-2 text-base font-normal rounded-lg   hover:bg-gray-800"
@@ -37,7 +37,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
                 <span className="ml-3">Your Orders</span>
               </Link>
             </button>
-            <button className="w-full">
+            <button className="w-full" onClick={toggleSidebar}>
               <Link
                 to="/Account"
                 className="flex items-center p-2 text-base font-normal rounded-lg   hover:bg-gray-800"
@@ -48,7 +48,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
                 </span>
               </Link>
             </button>
-            <button className="w-full">
+            <button className="w-full" onClick={toggleSidebar}>
               <Link
                 to="/Notifications"
                 className="flex items-center p-2 text-base font-normal rounded-lg   hover:bg-gray-800"
@@ -59,7 +59,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
                 </span>
               </Link>
             </button>
-            <button className="w-full">
+            <button className="w-full" onClick={toggleSidebar}>
               <Link
                 to="/"
                 className="flex items-center p-2 text-base font-normal rounded-lg   hover:bg-gray-800"
@@ -70,7 +70,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
             </button>
           </ul>
           <ul className="pt-4 mt-4 space-y-2 border-t border-gray-600 dark:border-gray-700">
-            <button className="w-full">
+            <button className="w-full" onClick={toggleSidebar}>
               <Link
                 to="/premium"
                 className="flex items-center p-2 text-base font-normal rounded-lg transition duration-75   hover:bg-gray-800 group"
@@ -79,7 +79,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
                 <span className="ml-4">Upgrade to Pro</span>
               </Link>
             </button>
-            <button className="w-full">
+            <button className="w-full" onClick={toggleSidebar}>
               <Link
                 to="/AboutUs"
                 className="flex items-center p-2 text-base font-normal rounded-lg transition duration-75   hover:bg-gray-800 group"
@@ -88,7 +88,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
                 <span className="ml-3">About Us</span>
               </Link>
             </button>
-            <button className="w-full">
+            <button className="w-full" onClick={toggleSidebar}>
               <Link
                 to="/support/help"
                 className="flex items-center p-2 text-base font-normal rounded-lg transition duration-75   hover:bg-gray-800 group"
@@ -97,7 +97,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
                 <span className="ml-3">Help</span>
               </Link>
             </button>
-            <button className="w-full">
+            <button className="w-full" onClick={toggleSidebar}>
               <Link
                 to="/login"
                 className="flex items-center p-2 text-base font-normal rounded-lg   hover:bg-gray-800"
@@ -106,7 +106,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
                 <span className="ml-3">Log In</span>
               </Link>
             </button>
-            <button className="w-full">
+            <button className="w-full" onClick={toggleSidebar}>
               <Link
                 to="/signup"
                 className="flex items-center p-2 text-base font-normal rounded-lg   hover:bg-gray-800"
