@@ -29,7 +29,7 @@ const Newsletter = () => {
             type="text"
             id="input-group-1"
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm leading-loose 
-            rounded focus:outline-none focus:ring-blue-300  min-w-80 w-full pl-10 p-2.5 pr-"
+            rounded focus:outline-none focus:ring focus:border-blue-300 min-w-80 w-full pl-10 p-2.5 pr-"
             placeholder="johndoe@gmail.com"
           />
           <button
