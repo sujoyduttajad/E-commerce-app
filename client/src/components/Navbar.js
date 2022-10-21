@@ -46,7 +46,7 @@ export default function Navbar() {
                 type="text"
                 id="input-group-1"
                 className="bg-gray-50 border border-gray-300 bg-gray-200 text-gray-900 text-sm leading-loose 
-            rounded focus:ring-4 lg:min-w-full max-w-full lg:w-full w-80 pl-10 py-1.5  "
+                rounded focus:outline-none focus:ring focus:border-blue-300 lg:min-w-full max-w-full lg:w-full w-80 pl-10 py-1.5  "
                 placeholder="Search here"
               />
               <button
