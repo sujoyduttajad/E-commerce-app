@@ -58,7 +58,7 @@ const Footer = () => {
                 to="/Seller"
                 className="title-font hover:text-gray-300 hover:underline md:mb-0 leading-5"
               >
-                Seller
+                Seller Page
               </Link>
             </li>
           </ul>
