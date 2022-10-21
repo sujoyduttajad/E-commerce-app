@@ -28,18 +28,18 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
       <aside className="sidebar w-64 h-5/6 mt-8 rounded" aria-label="Sidebar">
         <div className="h-full overflow-y-auto py-4 px-3 rounded">
           <ul className="space-y-2">
-            <li>
-            <Link
+            <button className="w-full">
+              <Link
                 to="/OrderTracking"
                 className="flex items-center p-2 text-base font-normal rounded-lg   hover:bg-gray-800"
               >
                 <OrdersIcon />
                 <span className="ml-3">Your Orders</span>
               </Link>
-            </li>
-            <li>
+            </button>
+            <button>
               <Link
-                 to="/Account"
+                to="/Account"
                 className="flex items-center p-2 text-base font-normal rounded-lg   hover:bg-gray-800"
               >
                 <UserIcon />
@@ -47,10 +47,10 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
                   Your Profile
                 </span>
               </Link>
-            </li>
-            <li>
+            </button>
+            <button>
               <Link
-                 to="/Notifications"
+                to="/Notifications"
                 className="flex items-center p-2 text-base font-normal rounded-lg   hover:bg-gray-800"
               >
                 <Notifications />
@@ -58,63 +58,63 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
                   Notifications
                 </span>
               </Link>
-            </li>
-            <li>
+            </button>
+            <button>
               <Link
-                 to="/"
+                to="/"
                 className="flex items-center p-2 text-base font-normal rounded-lg   hover:bg-gray-800"
               >
                 <ShoppingBag />
                 <span className="flex-1 ml-3 whitespace-nowrap">Products</span>
               </Link>
-            </li>
+            </button>
           </ul>
           <ul className="pt-4 mt-4 space-y-2 border-t border-gray-600 dark:border-gray-700">
-            <li>
+            <button>
               <Link
-                 to="/premium"
+                to="/premium"
                 className="flex items-center p-2 text-base font-normal rounded-lg transition duration-75   hover:bg-gray-800 group"
               >
                 <UpgradePro />
                 <span className="ml-4">Upgrade to Pro</span>
               </Link>
-            </li>
-            <li>
+            </button>
+            <button>
               <Link
-                 to="/AboutUs"
+                to="/AboutUs"
                 className="flex items-center p-2 text-base font-normal rounded-lg transition duration-75   hover:bg-gray-800 group"
               >
                 <InfoIcon />
                 <span className="ml-3">About Us</span>
               </Link>
-            </li>
-            <li>
+            </button>
+            <button>
               <Link
-                 to="/support/help"
+                to="/support/help"
                 className="flex items-center p-2 text-base font-normal rounded-lg transition duration-75   hover:bg-gray-800 group"
               >
                 <HelpIcon />
                 <span className="ml-3">Help</span>
               </Link>
-            </li>
-            <li>
+            </button>
+            <button>
               <Link
-                 to="/login"
+                to="/login"
                 className="flex items-center p-2 text-base font-normal rounded-lg   hover:bg-gray-800"
               >
                 <LogInIcon />
                 <span className="flex-1 ml-3 whitespace-nowrap">Log In</span>
               </Link>
-            </li>
-            <li>
+            </button>
+            <button>
               <Link
-                 to="/signup"
+                to="/signup"
                 className="flex items-center p-2 text-base font-normal rounded-lg   hover:bg-gray-800"
               >
                 <SignUpIcon />
                 <span className="flex-1 ml-3 whitespace-nowrap">Sign Up</span>
               </Link>
-            </li>
+            </button>
           </ul>
         </div>
       </aside>
