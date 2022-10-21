@@ -21,7 +21,7 @@ const Newsletter = () => {
         </div>
       </div>
       <div className="relative ">
-        <form className="w-96">
+        <form className="w-96 focus:outline-blue-500">
           <div className="flex absolute inset-y-0 left-0 items-center pl-3">
             <Envelope />
           </div>
@@ -29,13 +29,13 @@ const Newsletter = () => {
             type="text"
             id="input-group-1"
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm leading-loose 
-            rounded focus:ring-blue-500 focus:outline-blue-500 min-w-80 w-full pl-10 p-2.5 pr-"
+            rounded focus:outline-none focus:ring-blue-300  min-w-80 w-full pl-10 p-2.5 pr-"
             placeholder="johndoe@gmail.com"
           />
           <button
             className="flex absolute right-1.5 bottom-1.5 items-center bg-blue-900 border-0 px-3 
                 focus:outline-none hover:bg-blue-800 rounded text-white md:mt-0  
-                focus:ring-4 focus:ring-blue-300 font-medium text-md px-4 py-2"
+                 focus:ring-blue-300 font-medium text-md px-4 py-2"
           >
             Subscribe
           </button>
