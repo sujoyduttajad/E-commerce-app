@@ -91,6 +91,14 @@ const Footer = () => {
                 Shipping Policy
               </Link>
             </li>
+            <li className="leading-6 pb-1">
+              <Link
+                to="/Shipping"
+                className="title-font hover:text-gray-300 hover:underline md:mb-0 leading-5"
+              >
+                Shipping Policy
+              </Link>
+            </li>
           </ul>
           <ul className="list-none flex flex-col flex-wrap justify-evenly font-normal text-gray-400 px-4">
             <p className="font-medium text-gray-300 tracking-wider py-3 ">
