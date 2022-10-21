@@ -37,40 +37,40 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
                 <span className="ml-3">Your Orders</span>
               </Link>
             </button>
-            <button>
+            <button className="w-full">
               <Link
                 to="/Account"
                 className="flex items-center p-2 text-base font-normal rounded-lg   hover:bg-gray-800"
               >
                 <UserIcon />
-                <span className="flex-1 ml-3 whitespace-nowrap">
+                <span className="ml-3">
                   Your Profile
                 </span>
               </Link>
             </button>
-            <button>
+            <button className="w-full">
               <Link
                 to="/Notifications"
                 className="flex items-center p-2 text-base font-normal rounded-lg   hover:bg-gray-800"
               >
                 <Notifications />
-                <span className="flex-1 ml-3 whitespace-nowrap">
+                <span className="ml-3">
                   Notifications
                 </span>
               </Link>
             </button>
-            <button>
+            <button className="w-full">
               <Link
                 to="/"
                 className="flex items-center p-2 text-base font-normal rounded-lg   hover:bg-gray-800"
               >
                 <ShoppingBag />
-                <span className="flex-1 ml-3 whitespace-nowrap">Products</span>
+                <span className="ml-3">Products</span>
               </Link>
             </button>
           </ul>
           <ul className="pt-4 mt-4 space-y-2 border-t border-gray-600 dark:border-gray-700">
-            <button>
+            <button className="w-full">
               <Link
                 to="/premium"
                 className="flex items-center p-2 text-base font-normal rounded-lg transition duration-75   hover:bg-gray-800 group"
@@ -79,7 +79,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
                 <span className="ml-4">Upgrade to Pro</span>
               </Link>
             </button>
-            <button>
+            <button className="w-full">
               <Link
                 to="/AboutUs"
                 className="flex items-center p-2 text-base font-normal rounded-lg transition duration-75   hover:bg-gray-800 group"
@@ -88,7 +88,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
                 <span className="ml-3">About Us</span>
               </Link>
             </button>
-            <button>
+            <button className="w-full">
               <Link
                 to="/support/help"
                 className="flex items-center p-2 text-base font-normal rounded-lg transition duration-75   hover:bg-gray-800 group"
@@ -97,22 +97,22 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
                 <span className="ml-3">Help</span>
               </Link>
             </button>
-            <button>
+            <button className="w-full">
               <Link
                 to="/login"
                 className="flex items-center p-2 text-base font-normal rounded-lg   hover:bg-gray-800"
               >
                 <LogInIcon />
-                <span className="flex-1 ml-3 whitespace-nowrap">Log In</span>
+                <span className="ml-3">Log In</span>
               </Link>
             </button>
-            <button>
+            <button className="w-full">
               <Link
                 to="/signup"
                 className="flex items-center p-2 text-base font-normal rounded-lg   hover:bg-gray-800"
               >
                 <SignUpIcon />
-                <span className="flex-1 ml-3 whitespace-nowrap">Sign Up</span>
+                <span className="ml-3">Sign Up</span>
               </Link>
             </button>
           </ul>
