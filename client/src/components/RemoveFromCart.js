@@ -15,7 +15,7 @@ export default function RemoveFromCart({ product, currentProduct }) {
       className="flex ml-2 text-indigo-900 bg-yellow-100 border-0 py-2 px-6 
       focus:outline-none hover:bg-yellow-200 rounded font-medium"
       onClick={handleRemoveItem}
-      disabled={!cartCount}
+      disabled={currentProduct.length !== 0}
       style={{
         cursor: `${currentProduct.length !== 0 ? "pointer" : "not-allowed"}`,
         opacity: `${currentProduct.length !== 0 ? 1 : 0.5}`,
