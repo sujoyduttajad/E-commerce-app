@@ -12,10 +12,10 @@ const Newsletter = () => {
           paramHeight={`${width < 450 ? '35' : ''}`} 
         />
         <div className="flex flex-col p-4 mr-5">
-          <h2 className="tracking-wider text-xs title-font font-medium text-white text-4xl">
+          <h2 className="yellow-shade tracking-wider text-xs title-font font-medium text-white text-4xl">
             Newsletter
           </h2>
-          <p className="font-light text-sm">
+          <p className="font-base text-sm">
             Subscribe here to get every single updates
           </p>
         </div>
