@@ -18,7 +18,7 @@ const Footer = () => {
               <LogoIcon paramWidth={230} paramHeight={50} />
               <Tagline paramWidth={280} paramHeight={50} />
             </span>
-            <h2 className="tracking-wider text-xs title-font font-medium text-gray-500 mb-1 mt-2 text-lg">
+            <h2 className="tracking-wider title-font font-medium text-gray-500 mb-1 mt-2 text-lg">
               Primart® Pvt. Limited
             </h2>
           </Link>
