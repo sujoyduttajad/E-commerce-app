@@ -1,7 +1,9 @@
 require("dotenv").config();
 const express = require("express");
 const products = require("./products.json");
-const stripe = require('stripe')(process.env.STRIPE_API_SECRET)
+
+const fetch = require("node-fetch");
+const stripe = require("stripe")(process.env.STRIPE_API_SECRET);
 const { validateCartItems } = require("use-shopping-cart/src/serverUtil");
 
 module.exports = function getRoutes() {
@@ -17,7 +19,10 @@ module.exports = function getRoutes() {
 
 // controlers
 function getProducts(req, res) {
-  res.status(200).json({ products });
+  const fetchedProducts = fetch("https://fakestoreapi.com/products").then(
+    (res) => res.json()
+  );
+  res.status(200).json({ fetchedProducts });
 }
 
 function getSingleProduct(req, res) {
@@ -54,13 +59,13 @@ async function createCheckoutSession(req, res) {
       line_items,
       success_url: `${origin}/result?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: origin,
-      mode: 'payment'
+      mode: "payment",
     };
 
     const checkoutSession = await stripe.checkout.sessions.create(params);
 
     res.status(200).json(checkoutSession);
   } catch (error) {
-    res.status(500).json({ statusCode: 500, message: error.message })
+    res.status(500).json({ statusCode: 500, message: error.message });
   }
 }
