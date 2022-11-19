@@ -45,12 +45,12 @@ export default function Navbar() {
               <input
                 type="text"
                 id="input-group-1"
-                className="bg-gray-50 border border-gray-300 bg-gray-200 text-gray-900 text-sm leading-loose 
+                className="border border-gray-300 bg-gray-200 text-gray-900 text-sm leading-loose 
                 rounded focus:outline-none focus:ring focus:border-blue-300 lg:min-w-full max-w-full lg:w-full w-80 pl-10 py-1.5  "
                 placeholder="Search here"
               />
               <button
-                className="flex absolute lg:right-1.5 bottom-1 right-1 items-center bg-blue-900 border-0 px-3 
+                className="flex absolute lg:right-1.5 bottom-1 right-1 items-center bg-blue-900 border-0
                 focus:outline-none hover:bg-blue-800 rounded text-white md:mt-0 
                  font-medium text-md px-4 py-1"
               >
