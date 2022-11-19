@@ -6,11 +6,14 @@ import LoadingSpinner from "./LoadingSpinner";
 import formatProductPrice from "../utils/formatProductPrice";
 
 export default function ProductList() {
+  
   const { data: products, isLoading } = useQuery(["Products"], () =>
-    axios("/api/products").then((res) => res.data.products)
+    axios("/api/products").then((res) => res.data.fetchedProducts)
   );
 
   if (isLoading) return <LoadingSpinner />;
+
+  console.log(products)
 
   return (
     <>
