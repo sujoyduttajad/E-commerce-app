@@ -8,7 +8,7 @@ export default function Result() {
           <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-white mb-4">
             Payment Accepted!
           </h1>
-          <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 text-xl mx-auto">
+          <p className=" leading-relaxed xl:w-2/4 lg:w-3/4 text-xl mx-auto">
             Below is your order summary. The items will be shipped to you within
             the next week.
           </p>
