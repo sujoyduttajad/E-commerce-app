@@ -12,7 +12,7 @@ const Newsletter = () => {
           paramHeight={`${width < 450 ? '35' : ''}`} 
         />
         <div className="flex flex-col p-4 mr-5">
-          <h2 className="yellow-shade tracking-wider text-xs title-font font-medium text-white text-4xl">
+          <h2 className="yellow-shade tracking-wider title-font font-medium text-white text-4xl">
             Newsletter
           </h2>
           <p className="font-base text-sm">
@@ -33,7 +33,7 @@ const Newsletter = () => {
             placeholder="johndoe@gmail.com"
           />
           <button
-            className="flex absolute right-1.5 bottom-1.5 items-center bg-blue-900 border-0 px-3 
+            className="flex absolute right-1.5 bottom-1.5 items-center bg-blue-900 border-0 
                 focus:outline-none hover:bg-blue-800 rounded text-white md:mt-0  
                  focus:ring-blue-300 font-medium text-md px-4 py-2"
           >
