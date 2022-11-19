@@ -7,7 +7,7 @@ import formatProductPrice from "../utils/formatProductPrice";
 
 export default function ProductList() {
   
-  const { data: products, isLoading } = useQuery("Products", () =>
+  const { data: products, isLoading } = useQuery(["Products"], () =>
     axios("/api/products").then((res) => res.data.products)
   );
 
