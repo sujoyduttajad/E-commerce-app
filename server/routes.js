@@ -21,7 +21,7 @@ module.exports = function getRoutes() {
 function getProducts(req, res) {
   const fetchedProducts = fetch("https://fakestoreapi.com/products").then(
     (res) => res.json()
-  );
+  ).then(json=>console.log(json));
   res.status(200).json({ fetchedProducts });
 }
 
