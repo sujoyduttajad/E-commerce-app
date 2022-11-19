@@ -13,8 +13,6 @@ export default function ProductList() {
 
   if (isLoading) return <LoadingSpinner />;
 
-  console.log(products)
-
   return (
     <>
       {products.map((product) => (
@@ -34,7 +32,7 @@ function ProductItem({ product }) {
           <img
             className="lg:h-96 md:h-36 w-full object-cover object-center"
             src={product.image}
-            alt={product.name}
+            alt={product.title}
           />
         </Link>
         <div className="p-6">
@@ -42,9 +40,9 @@ function ProductItem({ product }) {
             {product.category}
           </h2>
           <h1 className="title-font text-lg font-medium text-white mb-3">
-            {product.name}
+            {product.title}
           </h1>
-          <p className="leading-relaxed mb-3">{product.description}</p>
+          {/* <p className="leading-relaxed mb-3">{product.description}</p> */}
           <div className="flex items-center flex-wrap ">
             <Link
               to={`/${product.id}`}
