@@ -1,8 +1,6 @@
 require("dotenv").config();
 const express = require("express");
 const products = require("./products.json");
-
-const fetch = require("node-fetch");
 const stripe = require("stripe")(process.env.STRIPE_API_SECRET);
 const { validateCartItems } = require("use-shopping-cart/src/serverUtil");
 
@@ -19,10 +17,7 @@ module.exports = function getRoutes() {
 
 // controlers
 function getProducts(req, res) {
-  const fetchedProducts = fetch("https://fakestoreapi.com/products").then(
-    (res) => res.json()
-  ).then(json=>console.log(json));
-  res.status(200).json({ fetchedProducts });
+  res.status(200).json({ products });
 }
 
 function getSingleProduct(req, res) {
