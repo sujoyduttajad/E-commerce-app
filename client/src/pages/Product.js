@@ -21,6 +21,8 @@ export default function Product() {
     axios(`/api/products/${productId}`).then((res) => res.data.product)
   );
 
+  console.log(product, productId)
+
   if (isLoading) return <LoadingSpinner />;
   if (isError)
     return (
