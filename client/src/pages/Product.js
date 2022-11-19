@@ -40,7 +40,7 @@ export default function Product() {
       <div className="container px-5 py-24 mx-auto">
         <div className="lg:w-4/5 mx-auto flex flex-wrap">
           <img
-            alt={product.name}
+            alt={product.title}
             className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
             src={product.image}
           />
@@ -49,9 +49,9 @@ export default function Product() {
               {product.category}
             </h2>
             <h1 className="text-white text-3xl title-font font-medium mb-8">
-              {product.name}
+              {product.title}
             </h1>
-            <p className="leading-relaxed">{product.description_long}</p>
+            <p className="leading-relaxed">{product.description}</p>
             <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-600 mb-5"></div>
             <div className="flex flex-wrap">
               <span className="title-font font-medium text-2xl text-white pr-6 mb-4">
