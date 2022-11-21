@@ -12,7 +12,6 @@ export default function ProductList() {
   );
 
   if (isLoading) return <LoadingSpinner />;
-  console.log(products)
 
   return (
     <>
@@ -27,11 +26,11 @@ function ProductItem({ product }) {
   const price = formatProductPrice(product);
 
   return (
-    <div className=" p-4 md:w-1/3 user-select-none">
+    <div className=" p-4 md:w-1/3 lg:w-1/4 user-select-none">
       <div className="product-card h-full rounded-lg overflow-hidden">
         <Link to={`/${product.id}`}>
           <img
-            className="lg:h-96 md:h-36 w-full object-cover object-center"
+            className="lg:h-80 md:h-36 w-full object-cover object-center"
             src={product.thumbnail}
             alt={product.title}
           />
