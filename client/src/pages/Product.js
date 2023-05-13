@@ -17,9 +17,14 @@ export default function Product() {
     isLoading,
     isError,
     error,
-  } = useQuery(["Product", productId], () =>
-    axios(`/api/products/${productId}`).then((res) => res.data.product)
-  );
+  } = useQuery(["Product", productId], () => {
+    const url = `/api/products/${productId}`;
+    console.log("Fetching product from API:", url);
+    return axios(url).then((res) => {
+      console.log("API response:", res.data);
+      return res.data.product;
+    });
+  });
 
   console.log(product, productId)
 
