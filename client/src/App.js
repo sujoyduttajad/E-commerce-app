@@ -4,7 +4,6 @@ import Result from "./pages/Result";
 import Product from "./pages/Product";
 import { QueryClientProvider, QueryClient } from "react-query";
 import { Routes, Route } from "react-router-dom";
-import { CartProvider } from "use-shopping-cart";
 import { Toaster } from "react-hot-toast";
 import Navbar from "components/Navbar";
 import Footer from "components/Footer";
